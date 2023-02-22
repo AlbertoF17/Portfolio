@@ -264,9 +264,9 @@ svg {
     animation-iteration-count: infinite;
     animation-fill-mode: none;
     animation-direction: normal;
-  }
+}
   
-  @keyframes floating {
+@keyframes floating {
     from {
       transform: translateY(0px);
     }
@@ -276,4 +276,69 @@ svg {
     to {
       transform: translateY(0px);
     }
-  }
+}
+
+/* PARA QUE LA ANIMACION NO SEA INFINITA*/
+/*span{
+    display:block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 36ch;
+    animation: typing 8s steps(36),
+    blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}*/
+
+span{
+    display:block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 36ch;
+    animation: typing 8s steps(36) infinite,
+    blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    } 50%{
+        width: 36ch;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+
+.separador{
+    height: 20vh;
+}
+
+.fondo{
+    background-image: url(https://images.unsplash.com/photo-1622560939525-2eb4358d3eba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eSUyMHBhbm9yYW1pY3xlbnwwfHwwfHw%3D&w=1000&q=80);
+    filter: grayscale(100);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
