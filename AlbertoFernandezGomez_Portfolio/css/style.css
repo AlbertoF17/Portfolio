@@ -355,6 +355,7 @@ svg {
     filter: grayscale(100);
     background-size: cover;
     background-repeat: no-repeat;
+    max-width: 90vw;
 }
 
 .fondo:before {
