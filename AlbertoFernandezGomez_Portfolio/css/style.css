@@ -251,6 +251,10 @@ svg {
 }
 */
 
+.navbar{
+    top: -1px;
+}
+
 .fs-0{
     font-size: 4rem;
 }
