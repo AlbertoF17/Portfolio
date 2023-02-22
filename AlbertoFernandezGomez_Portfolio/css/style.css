@@ -373,4 +373,5 @@ svg {
     height: 25rem;
     border: 3px solid gray;
     padding: 1rem;
+    cursor: pointer;
 }
