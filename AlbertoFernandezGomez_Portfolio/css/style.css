@@ -350,6 +350,16 @@ svg {
     height: 10vh;
 }
 
+.tecnologias {
+    display: flex;
+    align-items: space-around;
+    gap: 1rem;
+}
+
+.tecnologias img{
+    width: 30%;
+}
+
 .fondo{
     background-image: url(https://images.unsplash.com/photo-1622560939525-2eb4358d3eba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eSUyMHBhbm9yYW1pY3xlbnwwfHwwfHw%3D&w=1000&q=80);
     filter: grayscale(100);
