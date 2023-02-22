@@ -296,7 +296,7 @@ svg {
     }
 }*/
 
-span{
+#escritura{
     display:block;
     font-family: monospace;
     white-space: nowrap;
@@ -341,4 +341,11 @@ span{
 	right: 0;
 	background-color: rgba(0,0,0,0.6);
     z-index: -1;
+}
+
+.carta{
+    width: 30rem;
+    height: 20rem;
+    border: 3px solid gray;
+    padding: 1rem;
 }
