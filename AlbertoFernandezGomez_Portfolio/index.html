@@ -26,9 +26,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
         defer>
-        </script>
+    </script>
 
     <!-- My css -->
+    <link href="css/imagehover.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <!-- My scripts -->
     <!--<script type="text/javascript" src="js/app.js" defer></script>-->
@@ -43,7 +44,7 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top p-3 fs-4 text-nowrap">
-        <a class="navbar-brand m-0 ps-3" href="#"> <!--CAMBIAR ps-0 (PADDIG LEFT)-->
+        <a class="navbar-brand m-0 ps-0" href="#">
             <img src="media/img/icono.png" alt="Logo" id="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -86,6 +87,7 @@
             <h1 class="fs-0">Home</h1>
         </div>
         <h2 class="fs-1"><span id="escritura">Hola, soy Alberto, desarrollador web</span></h2>
+        <!--<h2 class="fs-1"><span id="escritura2">Soy Alberto, desarrollador web</span></h2>-->
         <div class="d-flex flex-row align-items-center justify-content-center w-100 p-0 mx-1">
             <div class="d-flex flex-column align-items-center justify-content-center w-50">
                 <img id="logo-dinamico" src="media/img/icono.png" class="mx-auto mt-1 mb-4">
@@ -101,7 +103,7 @@
     <div id="aboutMe" class="container d-flex flex-column align-items-center justify-content-center">
         <div class="d-flex flex-column align-items-center justify-content-center gap-5">
             <h1 class="fs-0">Sobre Mi</h1>
-            <div class="impar d-flex flex-row align-items-center justify-content-between gap-5">
+            <div class="impar d-flex flex-row align-items-center justify-content-around gap-5">
                 <div class="w-50 d-flex justify-content-center">
                     <img src="https://thumbs.gfycat.com/OrderlyClassicHake-max-1mb.gif">
                 </div>
@@ -111,7 +113,7 @@
                     </p>
                 </div>
             </div>
-            <div class="par d-flex flex-row align-items-center justify-content-between gap-5">
+            <div class="par d-flex flex-row align-items-center justify-content-around gap-5">
                 <div class="w-50">
                     <p class="text-center fs-4 px-3 my-2 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. Ut enim ad minim veniam.
@@ -121,7 +123,7 @@
                     <img class="w-50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s">
                 </div>
             </div>
-            <div class="impar d-flex flex-row align-items-center justify-content-between gap-5">
+            <div class="impar d-flex flex-row align-items-center justify-content-around gap-5">
                 <div class="w-50 d-flex justify-content-center">
                     <img class="w-50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s">
                 </div>
@@ -136,18 +138,30 @@
     <div class="separador"></div>
     <div id="portfolio" class="container d-flex flex-column align-items-center justify-content-center">
         <h1 class="fs-0">Portfolio</h1> 
-        <div id="cartas" class="container d-flex justify-content-around align-items-center gap-5 mt-5">
+        <div id="cartas" class="container d-flex flex-wrap justify-content-around align-items-center gap-5 mt-5 p-0">
+            <figure class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert">
+                <img>
+                <figcaption>
+                    <p>Youtify</p>
+                </figcaption>
+            </figure>
             <div class="carta d-flex flex-column justify-content-center align-items-center">
-                <p>Youtify</p>
+                <img>
+                <figcaption>
+                    <p>Mi Portfolio</p>
+                </figcaption>
             </div>
             <div class="carta d-flex flex-column justify-content-center align-items-center">
-                <p>Mi Portfolio</p>
+                <img>
+                <figcaption>
+                    <p>Proyecto 3</p>
+                </figcaption>
             </div>
             <div class="carta d-flex flex-column justify-content-center align-items-center">
-                <p>Proyecto 3</p>
-            </div>
-            <div class="carta d-flex flex-column justify-content-center align-items-center">
-                <p>Proyecto 4</p>
+                <img>
+                <figcaption>
+                    <p>Proyecto 4</p>
+                </figcaption>
             </div>
         </div>
     </div>

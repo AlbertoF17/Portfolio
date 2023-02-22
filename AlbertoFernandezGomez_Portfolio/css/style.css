@@ -321,6 +321,31 @@ svg {
     }
 }
 
+#escritura2{
+    display:block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 1px solid;
+    width: 30ch;
+    animation: typing2 5s steps(30) infinite,
+    blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing2 {
+    from {
+        width: 0;
+    } 50%{
+        width: 30ch;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+
 .separador{
     height: 20vh;
 }
@@ -344,8 +369,8 @@ svg {
 }
 
 .carta{
-    width: 30rem;
-    height: 20rem;
+    width: 15rem;
+    height: 25rem;
     border: 3px solid gray;
     padding: 1rem;
 }
