@@ -268,16 +268,14 @@ html {
     font-size: 4rem;
 }
 
-/* SE CARGA TODA LA PÁGINA XD AYUDA ME QUIERO MORIR*/
-/* main>div{
+main:nth-child(odd){
+    height: 92.5vh;
+}
+
+/* main>div:not(.separador){
     height: 92.5vh;
 } */
 
-
-/* TEMPORAL MIENTRAS LO DE ARRIBA NO FUNCIONE*/
-main>div:nth-child(1){
-    height: 92.5vh;
-}
 
 #logo-dinamico {
     width: 15rem;
