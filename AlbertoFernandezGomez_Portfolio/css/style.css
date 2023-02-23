@@ -282,6 +282,26 @@ main>div:not(.separador){
 }
 */
 
+.fondo{
+    background-image: url(../media/background/bg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    z-index: -2;
+}
+
+.fondo:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    height: 100vh;
+	background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
 #logo-dinamico {
     width: 15rem;
     animation-name: floating;
@@ -413,24 +433,8 @@ div:has(#todas:focus) .tecnologia img{
     box-shadow: 0 0 10px var(--color-5), 0 0 40px var(--color-5), 0 0 80px var(--color-5);
 }
 
-.fondo{
-    background-image: url(../media/background/bg4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    z-index: -2;
-}
-
-.fondo:before {
-	content:'';
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-    height: 100vh;
-	background-color: rgba(0,0,0,0.6);
-    z-index: -1;
+#map{
+    filter: invert(100);
 }
 
 .carta{
