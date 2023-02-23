@@ -259,9 +259,19 @@ svg {
     --color-6: #492C9C;
 }
 
+/* NO SE COMO FUNCIONA XD
+html {
+    scroll-behavior: smooth;
+} */
+
 .fs-0{
     font-size: 4rem;
 }
+
+/* SE CARGA TODA LA PÁGINA
+ main>div{
+    height: 92vh;
+} */
 
 #logo-dinamico {
     width: 15rem;
@@ -348,6 +358,22 @@ svg {
 
 .tecnologias img{
     width: 30%;
+}
+
+.tecnologia img{
+    width: 4rem;
+    filter: grayscale(100);
+}
+
+.tecnologia{
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.tecnologia img:hover{
+    filter: none;
+    box-shadow: 0 0 10px var(--color-5), 0 0 40px var(--color-5), 0 0 80px var(--color-5);
+    transition: all 0.3s;
 }
 
 .fondo{
