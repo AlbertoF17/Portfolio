@@ -268,9 +268,9 @@ html {
     font-size: 4rem;
 }
 
-/* SE CARGA TODA LA PÁGINA
- main>div{
-    height: 92vh;
+/* SE CARGA TODA LA PÁGINA XD AYUDA ME QUIERO MORIR*/
+/* main>div{
+    height: 92.5vh;
 } */
 
 #logo-dinamico {
@@ -354,6 +354,7 @@ html {
     display: flex;
     align-items: space-around;
     gap: 1rem;
+    width: 50%;
 }
 
 .tecnologias img{
@@ -379,6 +380,12 @@ html {
     transition: all 0.3s;
 }
 
+.tecnologia:focus img{
+    filter: none;
+    box-shadow: 0 0 10px var(--color-5), 0 0 40px var(--color-5), 0 0 80px var(--color-5);
+}
+
+
 .fondo{
     background-image: url(https://images.unsplash.com/photo-1622560939525-2eb4358d3eba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eSUyMHBhbm9yYW1pY3xlbnwwfHwwfHw%3D&w=1000&q=80);
     filter: grayscale(100);
@@ -399,7 +406,7 @@ html {
 }
 
 .carta{
-    width: 15rem;
+    width: 17rem;
     height: 25rem;
     border: 3px solid gray;
     padding: 1rem;
