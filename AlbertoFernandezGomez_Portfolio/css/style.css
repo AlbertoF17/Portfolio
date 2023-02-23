@@ -273,6 +273,11 @@ html {
     height: 92.5vh;
 } */
 
+/* TEMPORAL MIENTRAS LO DE ARRIBA NO FUNCIONE*/
+main>div:nth-child(1){
+    height: 92.5vh;
+}
+
 #logo-dinamico {
     width: 15rem;
     animation-name: floating;
