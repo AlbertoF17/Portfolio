@@ -268,14 +268,19 @@ html {
     font-size: 4rem;
 }
 
-main:nth-child(odd){
-    height: 92.5vh;
+#home{
+    height: 92vh;
 }
 
-/* main>div:not(.separador){
+/* SE SUPONE Q FUNCIONAN PERO NO
+ main:nth-child(odd){
     height: 92.5vh;
-} */
+} 
 
+main>div:not(.separador){
+    height: 92.5vh;
+}
+*/
 
 #logo-dinamico {
     width: 15rem;
@@ -396,9 +401,9 @@ main:nth-child(odd){
 
 .fondo{
     background-image: url(../media/background/bg4.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    max-width: 100vw;
+    max-width: 100%;
     z-index: -2;
 }
 
@@ -409,7 +414,7 @@ main:nth-child(odd){
 	bottom: 0;
 	left: 0;
 	right: 0;
-    height: 91.5vh;
+    height: 100vh;
 	background-color: rgba(0,0,0,0.6);
     z-index: -1;
 }
