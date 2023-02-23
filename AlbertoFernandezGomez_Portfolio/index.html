@@ -12,7 +12,7 @@
     <meta name="author" content="alberto.fernandez@a.vedrunasevillasj.es">
     <meta name="robots" content="index,follow">
     <meta name="revised" content="Tuesday, February 28th, 2023, 23:00pm">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
 
     <!-- Añado la fuente Roboto -->
@@ -81,7 +81,8 @@
             </form>
         </div>
     </nav>
-    <div id="home" class="container d-flex flex-column align-items-center justify-content-center fondo min-vh-50 max-vw-100 py-5 m-0 w-100">
+    <div id="home"
+        class="container d-flex flex-column align-items-center justify-content-center fondo min-vh-50 max-vw-100 py-5 m-0 w-100">
         <div class="d-flex justify-content-center p-4">
             <h1 class="fs-0">Home</h1>
         </div>
@@ -100,50 +101,57 @@
         </div>
     </div>
     <div class="separador"></div>
-    <!-- DIV CON ID ABOUT ME SE CARGA EL RESPONSIVE DE MOVILES -->
-    <div id="aboutMe" class="container d-flex flex-column align-items-center justify-content-center">
-        <div class="d-flex flex-column align-items-center justify-content-center gap-5">
-            <h1 class="fs-0">Sobre Mi</h1>
-            <div class="impar d-flex flex-row align-items-center justify-content-around gap-5">
-                <div class="w-50 d-flex justify-content-center">
-                    <img src="https://thumbs.gfycat.com/OrderlyClassicHake-max-1mb.gif">
-                </div>
-                <div class="w-50">
-                    <p class="text-center fs-4 px-3 my-2 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                </div>
+    <div id="aboutMe" class="container d-flex flex-column align-items-center justify-content-centers">
+        <h1 class="fs-0">Sobre Mi</h1>
+        <div class="impar d-flex flex-row align-items-center justify-content-around">
+            <div class="w-50 d-flex justify-content-center">
+                <img class="img-fluid" src="https://thumbs.gfycat.com/OrderlyClassicHake-max-1mb.gif">
             </div>
-            <div class="par d-flex flex-row align-items-center justify-content-around gap-5">
-                <div class="w-50">
-                    <p class="text-center fs-4 px-3 my-2 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                </div>
-                <div class="w-50 d-flex justify-content-center">
-                    <img class="w-50"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s">
-                </div>
+            <div class="w-50">
+                <p class="text-center fs-4 px-3 my-2 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
             </div>
-            <div class="impar d-flex flex-row align-items-center justify-content-around gap-5">
-                <div class="w-50 d-flex justify-content-center">
-                    <img class="w-50"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s">
-                </div>
-                <div class="w-50">
-                    <p class="text-center fs-4 px-3 my-2 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                </div>
+        </div>
+        <div class="par d-flex flex-row align-items-center justify-content-around">
+            <div class="w-50">
+                <p class="text-center fs-4 px-3 my-2 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="w-50 d-flex justify-content-center">
+                <img class="img-fluid"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s">
+            </div>
+        </div>
+        <div class="impar d-flex flex-row align-items-center justify-content-around gap-5">
+            <div class="w-50 d-flex justify-content-center">
+                <img class="img-fluid"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s">
+            </div>
+            <div class="w-50">
+                <p class="text-center fs-4 px-3 my-2 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
             </div>
         </div>
     </div>
     <div class="separador"></div>
     <div id="portfolio" class="container d-flex flex-column align-items-center justify-content-center">
         <h1 class="fs-0">Portfolio</h1>
+
+        <form>
+            <select name="modulo" id="modulo" class="form-control">
+                <option value="all">All</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </select>
+        </form>
         <div id="cartas" class="container d-flex flex-wrap justify-content-around align-items-center gap-5 mt-5 p-0">
             <figure class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-0">
                 <img src="./media/img/Youtify-Logo.png" class="w-100">
@@ -151,11 +159,12 @@
                     <h3>Youtify</h3>
                     <p>Este proyecto utiliza las Tecnologías:</p>
                     <div class="tecnologias d-flex flex-row flex-wrap justify-content-center align-items-center">
-                        <img src="./media/img/React-Dark.svg">
-                        <img src="./media/img/NodeJS-Dark.svg">
-                        <img src="./media/img/JavaScript.svg">
-                        <img src="./media/img/HTML.svg">
-                        <img src="./media/img/CSS.svg">
+                        <img class="react" src="./media/img/React-Dark.svg">
+                        <img class="nodejs" src="./media/img/NodeJS-Dark.svg">
+                        <img class="javascript" src="./media/img/JavaScript.svg">
+                        <img class="html" src="./media/img/HTML.svg">
+                        <img class="css" src="./media/img/CSS.svg">
+                        <img class="vscode" src="./media/img/VSCode-Dark.svg">
                     </div>
                 </figcaption>
             </figure>
@@ -168,7 +177,8 @@
                 </figcaption>
             </div>
             <div class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-0">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s" class="h-100 w-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s"
+                    class="h-100 w-100">
                 <figcaption class="d-flex flex-column justify-content-center align-items-center">
                     <h3>Proyecto 3</h3>
                     <p>Este proyecto utiliza las Tecnologías:</p>
@@ -219,4 +229,5 @@
     <div class="separador"></div>
 </body>
 <!--https://365webresources.com/54-developer-skills-icons-svg/-->
+
 </html>
