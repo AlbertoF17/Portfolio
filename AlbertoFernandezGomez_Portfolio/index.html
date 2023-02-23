@@ -45,9 +45,10 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top px-3 py-1 fs-4 text-nowrap">
         <a class="navbar-brand m-0 ps-0" href="#">
-            <img src="media/img/icono.png" alt="Logo" id="logo">
+            <!-- <img src="media/img/icono.png" alt="Logo" id="logo"> -->
+            <h1>Alberto Fernández</h1>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -66,8 +67,6 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Tecnologías</a>
-                        <a class="dropdown-item" href="#">Habilidades</a>
-                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Proyectos</a>
                     </ul>
                 </li>
@@ -75,23 +74,16 @@
                     <a class="nav-link" href="#contact">Contacto</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0 d-flex gap-2">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
     <div id="home"
         class="container d-flex flex-column align-items-center justify-content-center fondo min-vh-50 max-vw-100 py-5 m-0 w-100">
-        <div class="d-flex justify-content-center p-4">
-            <h1 class="fs-0">Home</h1>
-        </div>
         <!--<h2 class="fs-1 py-3"><span id="escritura">Hola, soy Alberto, desarrollador web</span></h2> BUSCAR A HACERLO CON WRAP-->
-        <h2 class="fs-1"><span id="escritura2">Soy Alberto, desarrollador web</span></h2>
-        <div class="d-flex flex-row align-items-center justify-content-center w-100 pb-3">
+        <div class="d-flex flex-column align-items-center justify-content-center w-100 pb-3">
             <div class="d-flex flex-column align-items-center justify-content-center w-50">
-                <img id="logo-dinamico" src="media/img/icono.png" class="mx-auto mt-1 mb-4">
+                <img id="logo-dinamico" src="media/img/icono.png" class="img-fluid mx-auto mt-1 mb-4">
             </div>
+            <!-- <h2 class="fs-1"><span id="escritura2">#HTML #CSS #JavaScript</span></h2> -->
             <div class="d-flex flex-column align-items-center justify-content-center w-50">
                 <p class="text-center fs-4 px-3 my-2 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et
@@ -101,7 +93,7 @@
         </div>
     </div>
     <div class="separador"></div>
-    <div id="aboutMe" class="container d-flex flex-column align-items-center justify-content-centers">
+    <div id="aboutMe" class="container d-flex flex-column align-items-center justify-content-center gap-5">
         <h1 class="fs-0">Sobre Mi</h1>
         <div class="impar d-flex flex-row align-items-center justify-content-around">
             <div class="w-50 d-flex justify-content-center">
@@ -142,9 +134,8 @@
     <div class="separador"></div>
     <div id="portfolio" class="container d-flex flex-column align-items-center justify-content-center">
         <h1 class="fs-0">Portfolio</h1>
-
         <form>
-            <select name="modulo" id="modulo" class="form-control">
+            <select name="modulo" id="modulo" class="form-control text-center">
                 <option value="all">All</option>
                 <option value="java">Java</option>
                 <option value="python">Python</option>
@@ -153,7 +144,7 @@
             </select>
         </form>
         <div id="cartas" class="container d-flex flex-wrap justify-content-around align-items-center gap-5 mt-5 p-0">
-            <figure class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-0">
+            <figure id="carta1" class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-0">
                 <img src="./media/img/Youtify-Logo.png" class="w-100">
                 <figcaption class="d-flex flex-column justify-content-center align-items-center">
                     <h3>Youtify</h3>
@@ -168,45 +159,46 @@
                     </div>
                 </figcaption>
             </figure>
-            <div class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-0">
+            <figure id="carta2" class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-0">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s"
-                    class="h-100 w-100 cursor-p">
+                    class="h-100 w-100">
                 <figcaption class="d-flex flex-column justify-content-center align-items-center">
                     <h3>Mi Portfolio</h3>
                     <p>Este proyecto utiliza las Tecnologías:</p>
                 </figcaption>
-            </div>
-            <div class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-0">
+            </figure>
+            <figure id="carta3" class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-0">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s"
                     class="h-100 w-100">
                 <figcaption class="d-flex flex-column justify-content-center align-items-center">
                     <h3>Proyecto 3</h3>
                     <p>Este proyecto utiliza las Tecnologías:</p>
                 </figcaption>
-            </div>
-            <div class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-0">
+            </figure>
+            <figure id="carta4" class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-0">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s"
-                    class="h-100 w-100 cursor-p">
+                    class="h-100 w-100">
                 <figcaption class="d-flex flex-column justify-content-center align-items-center">
                     <h3>Proyecto 4</h3>
                     <p>Este proyecto utiliza las Tecnologías:</p>
                 </figcaption>
-            </div>
+            </figure>
         </div>
     </div>
     <div class="separador"></div>
-    <div id="contact" class="container">
+    <div id="contact" class="container mb-5">
+        <h1 id="contacto" class="fs-0 text-center mb-4">Contacto</h1>
         <form action="mailto:alberto.fernandez@a.vedrunasevillasj.es" method="get" class="mt-2 mx-auto">
-            <fieldset class="form-row reset p-4 align-items-center border border-primary ">
-                <legend class="reset text-light border border-primary px-2 py-1">Contact me</legend>
+            <fieldset class="form-row reset p-4 align-items-center border">
+                <legend class="reset text-light border px-2 py-1">Contact me</legend>
                 <div class="form-group row g-3 mt-1 mx-auto">
-                    <label for="subject" class="col-sm-2 col-form-label text-primary">Asunto:</label>
+                    <label for="subject" class="col-sm-2 col-form-label">Asunto:</label>
                     <div class="col-sm-10">
                         <input type="text" id="subject" class="form-control text-info" name="subject" required />
                     </div>
                 </div>
                 <div class="form-group row g-3 mt-1 mx-auto">
-                    <label for="cc" class="col-sm-2 col-form-label text-primary">CC:</label>
+                    <label for="cc" class="col-sm-2 col-form-label">CC:</label>
                     <div class="col input-group mb-2">
                         <div class="input-group-prepend">
                             <div class="input-group-text">@</div>
@@ -216,17 +208,16 @@
                     </div>
                 </div>
                 <div class="row g-3 mt-2 mx-auto">
-                    <label for="body" class="form-label text-primary">Cuerpo del mensaje: </label> <br />
+                    <label for="body" class="form-label">Cuerpo del mensaje: </label> <br />
                     <textarea id="body" class="form-control text-info mt-2 w-10" name="body"
                         placeholder="Escriba el mensaje..." rows="15" cols="40" required></textarea>
                 </div>
                 <div class="row g-3 mt-2 w-25 mx-auto">
-                    <input id="sendBttn" class="btn btn-primary btn-lg" type="submit" value="Send" />
+                    <input id="sendBttn" class="btn btn-secondary btn-lg" type="submit" value="Send" />
                 </div>
             </fieldset>
         </form>
     </div>
-    <div class="separador"></div>
 </body>
 <!--https://365webresources.com/54-developer-skills-icons-svg/-->
 

@@ -250,9 +250,13 @@ svg {
     }
 }
 */
-
-.navbar{
-    top: -1px;
+:root {
+    --color-1: #283785;
+    --color-2: #1C2269;
+    --color-3: #18144F;
+    --color-4: #0D1130;
+    --color-5: #362073;
+    --color-6: #492C9C;
 }
 
 .fs-0{
@@ -306,7 +310,7 @@ svg {
     white-space: nowrap;
     border-right: 2px solid;
     width: 36ch;
-    animation: typing 8s steps(36) infinite,
+    animation: typing 8s steps(36) 1,
     blink 0.5s infinite step-end alternate;
     overflow: hidden;
 }
@@ -331,7 +335,7 @@ svg {
     white-space: nowrap;
     border-right: 1px solid;
     width: 30ch;
-    animation: typing2 5s steps(30) infinite,
+    animation: typing2 5s steps(30) 1,
     blink 0.5s infinite step-end alternate;
     overflow: hidden;
 }
@@ -391,9 +395,9 @@ svg {
     cursor: pointer;
 }
 
-form:has(select > option[value="java"]:checked) + .carta:has(.html),
+form:has(select > option[value="java"]:checked) .carta:has(.container .java),
 form:has(select > option[value="python"]:checked) + .container .python,
-form:has(select > option[value="html"]:checked) + .container .html,
+form:has(select > option[value="html"]:checked) .carta:has(.container .html),
 form:has(select > option[value="css"]:checked) + .container .css {
     color: rgb(var(--bs-success-rgb));
     animation: escala 2s;
