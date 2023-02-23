@@ -439,7 +439,7 @@ div:has(#todas:focus) .tecnologia img{
 
 .carta{
     width: 17rem;
-    height: 25rem;
+    height: 23rem; /* maybe 25rem mejor ns*/
     border: 3px solid gray;
     padding: 1rem;
     cursor: pointer;
