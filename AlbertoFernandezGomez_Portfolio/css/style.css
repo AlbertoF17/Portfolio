@@ -351,9 +351,8 @@ main:nth-child(odd){
 }
 
 .separador{
-    height: 10vh;
+    height: 7.5vh;
     width: 100%;
-    display: block;
 }
 
 .tecnologias {
