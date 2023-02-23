@@ -269,7 +269,7 @@ html {
 }
 
 #home{
-    height: 92vh;
+    height: 91.2vh;
 }
 
 /* SE SUPONE Q FUNCIONAN PERO NO
@@ -376,6 +376,8 @@ main>div:not(.separador){
 }
 
 .tecnologia{
+    font-size: 1.25rem;
+    color: white;
     border-color: transparent;
     background-color: transparent;
 }
@@ -387,6 +389,18 @@ main>div:not(.separador){
     border-radius: 0.9rem;
     min-width: 1rem;
 }
+
+#todas:hover{
+    box-shadow: 0 0 10px var(--color-5), 0 0 40px var(--color-5), 0 0 80px var(--color-5);
+    transition: all 0.3s;
+}
+
+div:has(#todas:focus) .tecnologia img{
+    filter: none;
+    box-shadow: 0 0 10px var(--color-5), 0 0 40px var(--color-5), 0 0 80px var(--color-5);
+    transition: all 0.3s;
+}
+
 
 .tecnologia img:hover{
     filter: none;
