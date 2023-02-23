@@ -273,6 +273,7 @@ html {
     height: 92.5vh;
 } */
 
+
 /* TEMPORAL MIENTRAS LO DE ARRIBA NO FUNCIONE*/
 main>div:nth-child(1){
     height: 92.5vh;
@@ -353,6 +354,8 @@ main>div:nth-child(1){
 
 .separador{
     height: 10vh;
+    width: 100%;
+    display: block;
 }
 
 .tecnologias {
