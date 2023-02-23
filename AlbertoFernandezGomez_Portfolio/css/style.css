@@ -350,6 +350,10 @@ main:nth-child(odd){
     }
 }
 
+#portatil{
+    filter: hue-rotate(340deg);
+}
+
 .separador{
     height: 7.5vh;
     width: 100%;
@@ -390,13 +394,12 @@ main:nth-child(odd){
     box-shadow: 0 0 10px var(--color-5), 0 0 40px var(--color-5), 0 0 80px var(--color-5);
 }
 
-
 .fondo{
-    background-image: url(https://images.unsplash.com/photo-1622560939525-2eb4358d3eba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eSUyMHBhbm9yYW1pY3xlbnwwfHwwfHw%3D&w=1000&q=80);
-    filter: grayscale(100);
-    background-size: cover;
+    background-image: url(../media/background/bg4.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
     max-width: 100vw;
+    z-index: -2;
 }
 
 .fondo:before {
@@ -406,6 +409,7 @@ main:nth-child(odd){
 	bottom: 0;
 	left: 0;
 	right: 0;
+    height: 91.5vh;
 	background-color: rgba(0,0,0,0.6);
     z-index: -1;
 }
