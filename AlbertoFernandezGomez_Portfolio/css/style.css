@@ -360,14 +360,17 @@ html {
     width: 30%;
 }
 
-.tecnologia img{
-    width: 4rem;
-    filter: grayscale(100);
-}
-
 .tecnologia{
     border-color: transparent;
     background-color: transparent;
+}
+
+.tecnologia img{
+    width: 4rem;
+    filter: grayscale(100);
+    background-color: transparent;
+    border-radius: 0.9rem;
+    min-width: 1rem;
 }
 
 .tecnologia img:hover{
