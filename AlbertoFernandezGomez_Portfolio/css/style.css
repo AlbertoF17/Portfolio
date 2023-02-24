@@ -376,6 +376,10 @@ main>div:not(.separador){
     }
 }
 
+nav{
+    height: 10vh;
+}
+
 #portatil{
     filter: hue-rotate(340deg);
 }
