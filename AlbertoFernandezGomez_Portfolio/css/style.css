@@ -284,6 +284,7 @@ main>div:not(.separador){
 
 .fondo{
     background-image: url(../media/background/bg4.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
