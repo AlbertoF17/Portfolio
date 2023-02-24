@@ -288,6 +288,7 @@ main>div:not(.separador){
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
+    max-height: 90vh;
     z-index: -2;
 }
 
@@ -377,7 +378,7 @@ main>div:not(.separador){
 }
 
 nav{
-    height: 10vh;
+    min-height: 10vh;
 }
 
 #portatil{
