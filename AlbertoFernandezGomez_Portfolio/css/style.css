@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 /*INICIAL (Bootstrap lo trae por defecto)*/
 /* 
 @charset "UTF-8";
@@ -161,7 +161,7 @@ form, input:not([type="checkbox"], [type="radio"]), textarea, select, button, la
     -ms-hyphens: auto;
     hyphens: auto;
     display: block;
-    
+
 }
 
 label {
@@ -250,214 +250,230 @@ svg {
     }
 }
 */
-:root {
-    --color-1: #283785;
-    --color-2: #1C2269;
-    --color-3: #18144F;
-    --color-4: #0D1130;
-    --color-5: #362073;
-    --color-6: #492C9C;
+/* NO SE COMO FUNCIONA XD*/
+html {
+  scroll-behavior: smooth;
 }
 
-/* NO SE COMO FUNCIONA XD */
+/* :root {
+  --scheme-color1: #283785;
+  --scheme-color2: #1C2269;
+  --scheme-color3: #18144F;
+  --scheme-color4: #0D1130;
+  --scheme-color5: #362073;
+  --scheme-color6: #492C9C;
+  --bs-body-color: #283785;
+  --bs-body-color-rgb: #362073;
+  --bs-body-bg: linear-gradient(90 #0D1130, #283785);
+  --bs-body-bg-rgb: linear-gradient(#e66465, #9198e5);
+  --main-font: 'Roboto', sans-serif;
+  --main-font-color: #181818;
+  --secondary-font-color: #f0f0f0;
+  --main-font-color-soft: #181818B3;
+  --secondary-font-color-soft: #f0f0f0B3;
+  --rem-value: 10px;
+  --font-size: 16px;
+  --spaces: 1rem;
+  --success-color: #28a745!important;
+  --danger-color: #bd2130!important;
+  --warning-color: #ffc107!important;
+  --info-color: aquamarine!important;
+  --bttn-color: #007bff!important;
+} */
 
-.fs-0{
-    font-size: 4rem;
+.fs-0 {
+  font-size: 4rem;
 }
 
-#home{
-    height: 91.2vh;
+
+#home {
+  height: 91.2vh;
 }
 
-/* SE SUPONE Q FUNCIONAN PERO NO
- main:nth-child(odd){
+/* SE SUPONE Q FUNCIONAN PERO NO*/
+main:nth-child(odd) {
+  height: 92.5vh;
+}
+
+/* main>div:not(.separador){
     height: 92.5vh;
-} 
+} */
 
-main>div:not(.separador){
-    height: 92.5vh;
-}
-*/
-
-.fondo{
-    background-image: url(../media/background/bg4.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    max-height: 90vh;
-    z-index: -2;
+.fondo {
+  background-image: url(../media/background/bg4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-width: 100%;
+  height: 90vh;
+  z-index: -2;
 }
 
 .fondo:before {
-	content:'';
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-    height: 100vh;
-	background-color: rgba(0,0,0,0.6);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 #logo-dinamico {
-    width: 15rem;
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-direction: normal;
-}
-  
-@keyframes floating {
-    from {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(15px);
-    }
-    to {
-      transform: translateY(0px);
-    }
+  width: 15rem;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-direction: normal;
 }
 
-#escritura{
-    display:block;
-    font-family: monospace;
-    white-space: nowrap;
-    border-right: 2px solid;
-    width: 36ch;
-    animation: typing 8s steps(36) 1,
-    blink 0.5s infinite step-end alternate;
-    overflow: hidden;
+@keyframes floating {
+  from {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+#escritura {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 36ch;
+  animation: typing 8s steps(36) 1, blink 0.5s infinite step-end alternate;
+  overflow: hidden;
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    } 50%{
-        width: 36ch;
-    }
+  from {
+    width: 0;
+  }
+  50% {
+    width: 36ch;
+  }
 }
-
 @keyframes blink {
-    50%{
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
-
-#escritura2{
-    display:block;
-    font-family: monospace;
-    white-space: nowrap;
-    border-right: 1px solid;
-    width: 30ch;
-    animation: typing2 5s steps(30) 1,
-    blink 0.5s infinite step-end alternate;
-    overflow: hidden;
+#escritura2 {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 1px solid;
+  width: 30ch;
+  animation: typing2 5s steps(30) 1, blink 0.5s infinite step-end alternate;
+  overflow: hidden;
 }
 
 @keyframes typing2 {
-    from {
-        width: 0;
-    } 50%{
-        width: 30ch;
-    }
+  from {
+    width: 0;
+  }
+  50% {
+    width: 30ch;
+  }
 }
-
 @keyframes blink {
-    50%{
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
+}
+nav {
+  min-height: 10vh;
 }
 
-nav{
-    min-height: 10vh;
+#portatil {
+  filter: hue-rotate(340deg);
 }
 
-#portatil{
-    filter: hue-rotate(340deg);
-}
-
-.separador{
-    height: 7.5vh;
-    width: 100%;
+.separador {
+  height: 7.5vh;
+  width: 100%;
 }
 
 .tecnologias {
-    display: flex;
-    align-items: space-around;
-    gap: 1rem;
-    width: 50%;
+  display: flex;
+  align-items: space-around;
+  gap: 1rem;
+  width: 50%;
 }
 
-.tecnologias img{
-    width: 30%;
+.tecnologias img {
+  width: 30%;
 }
 
-.tecnologia{
-    font-size: 1.25rem;
-    color: white;
-    border-color: transparent;
-    background-color: transparent;
+.tecnologia {
+  font-size: 1.25rem;
+  color: white;
+  border-color: transparent;
+  background-color: transparent;
 }
 
-.tecnologia img{
-    width: 4rem;
-    filter: grayscale(100);
-    background-color: transparent;
-    border-radius: 0.9rem;
-    min-width: 1rem;
+.tecnologia img {
+  width: 4rem;
+  filter: grayscale(100);
+  background-color: transparent;
+  border-radius: 0.9rem;
+  min-width: 1rem;
 }
 
-#todas:hover{
-    box-shadow: 0 0 10px var(--color-5), 0 0 40px var(--color-5), 0 0 80px var(--color-5);
-    transition: all 0.3s;
+#todas:hover {
+  box-shadow: 0 0 10px #362073, 0 0 40px #362073, 0 0 80px #362073;
+  transition: all 0.3s;
 }
 
-div:has(#todas:focus) .tecnologia img{
-    filter: none;
-    box-shadow: 0 0 10px var(--color-5), 0 0 40px var(--color-5), 0 0 80px var(--color-5);
-    transition: all 0.3s;
+div:has(#todas:focus) .tecnologia img {
+  filter: none;
+  box-shadow: 0 0 10px #362073, 0 0 40px #362073, 0 0 80px #362073;
+  transition: all 0.3s;
 }
 
-
-.tecnologia img:hover{
-    filter: none;
-    box-shadow: 0 0 10px var(--color-5), 0 0 40px var(--color-5), 0 0 80px var(--color-5);
-    transition: all 0.3s;
+.tecnologia img:hover {
+  filter: none;
+  box-shadow: 0 0 10px #362073, 0 0 40px #362073, 0 0 80px #362073;
+  transition: all 0.3s;
 }
 
-.tecnologia:focus img{
-    filter: none;
-    box-shadow: 0 0 10px var(--color-5), 0 0 40px var(--color-5), 0 0 80px var(--color-5);
+.tecnologia:focus img {
+  filter: none;
+  box-shadow: 0 0 10px #362073, 0 0 40px #362073, 0 0 80px #362073;
 }
 
-#map{
-    filter: invert(100);
+#map {
+  filter: invert(100);
 }
 
-.carta{
-    width: 17rem;
-    height: 23rem; /* maybe 25rem mejor ns*/
-    border: 3px solid gray;
-    padding: 1rem;
-    cursor: pointer;
+.carta {
+  width: 17rem;
+  height: 23rem; /* maybe 25rem mejor ns*/
+  border: 3px solid gray;
+  padding: 1rem;
+  cursor: pointer;
 }
 
-form:has(select > option[value="java"]:checked) .carta:has(.container .java),
-form:has(select > option[value="python"]:checked) + .container .python,
-form:has(select > option[value="html"]:checked) .carta:has(.container .html),
-form:has(select > option[value="css"]:checked) + .container .css {
-    color: rgb(var(--bs-success-rgb));
-    animation: escala 2s;
+form:has(select > option[value=java]:checked) .carta:has(.container .java),
+form:has(select > option[value=python]:checked) + .container .python,
+form:has(select > option[value=html]:checked) .carta:has(.container .html),
+form:has(select > option[value=css]:checked) + .container .css {
+  color: rgb(var(--bs-success-rgb));
+  animation: escala 2s;
 }
 
 @keyframes escala {
-    50% {
-        transform: scale(2);
-    }
+  50% {
+    transform: scale(2);
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
