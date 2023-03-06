@@ -254,8 +254,13 @@ svg {
 html {
   scroll-behavior: smooth;
 }
-
-/* :root {
+body, nav, input{
+  background-color: #0a0d25;
+}
+p, h1, h2, h3, li, a{
+  color: #492b9c;
+}
+ :root {
   --scheme-color1: #283785;
   --scheme-color2: #1C2269;
   --scheme-color3: #18144F;
@@ -279,7 +284,78 @@ html {
   --warning-color: #ffc107!important;
   --info-color: aquamarine!important;
   --bttn-color: #007bff!important;
-} */
+} 
+
+/* Remove border from toggler */
+.navbar-toggler {
+  border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon{
+  width: 30px;
+  height: 3px;
+  background-color: #e74c3c;
+  display: block;
+  transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar{
+  margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #777777;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+}
 
 .fs-0 {
   font-size: 4rem;
@@ -317,7 +393,7 @@ main:nth-child(odd) {
   left: 0;
   right: 0;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 
@@ -367,12 +443,13 @@ main:nth-child(odd) {
   }
 }
 #escritura2 {
+  color: white;
   display: block;
   font-family: monospace;
   white-space: nowrap;
-  border-right: 1px solid;
-  width: 30ch;
-  animation: typing2 5s steps(30) 1, blink 0.5s infinite step-end alternate;
+  border-right: 2px solid;
+  width: 22ch;
+  animation: typing2 5s steps(22) 1, blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -381,7 +458,7 @@ main:nth-child(odd) {
     width: 0;
   }
   50% {
-    width: 30ch;
+    width: 22ch;
   }
 }
 @keyframes blink {
@@ -454,17 +531,9 @@ div:has(#todas:focus) .tecnologia img {
   filter: invert(100);
 }
 
-.carta {
-  width: 17rem;
-  height: 23rem; /* maybe 25rem mejor ns*/
-  border: 3px solid gray;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-form:has(select > option[value=java]:checked) .carta:has(.container .java),
+form:has(select > option[value=java]:checked) #carta1:has(.container .java),
 form:has(select > option[value=python]:checked) + .container .python,
-form:has(select > option[value=html]:checked) .carta:has(.container .html),
+form:has(select > option[value=html]:checked) #carta1:has(.container .html),
 form:has(select > option[value=css]:checked) + .container .css {
   color: rgb(var(--bs-success-rgb));
   animation: escala 2s;
@@ -476,4 +545,230 @@ form:has(select > option[value=css]:checked) + .container .css {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 23rem;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+.wrapper {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* .carta::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -2;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}*/
+
+.carta::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+} 
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 3.5rem;
+  left: 0.5rem;
+  z-index: 0;
+}
+
+#instagram,
+#twitter,
+#github,
+#facebook {
+  text-align: center;
+  font-size: 3.6rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #18191f;
+  color: #fff;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+  border-radius: 29px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+}
+#twitter {
+  animation-delay: 0.3s;
+}
+#facebook {
+  animation-delay: 0.7s;
+}
+#github {
+  animation-delay: 0.1s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.carta{
+  width: 17rem;
+  height: 23rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.cover-image{
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 3rem;
+}
+
+.carta:hover .cover-image{
+  transform: translateY(-3rem);
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.wrapper{
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.carta:hover .wrapper{
+  transform: perspective(900px) translateY(-5%) rotateX(15deg);
+  box-shadow: 2px 35px 32px -8px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(255, 255, 255, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after{
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+.wrapper::before{
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -2;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.carta:hover .wrapper::before,
+.wrapper::after{
+  opacity: 1;
+}
+
+.carta:hover .wrapper::after {
+  height: 120px;
+}
+
+.title{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: transform 0.5s;
+}
+
+.carta:hover .title{
+  transform: translate3d(0%, -10rem, 10rem);
+}
+
+.carta>.tecnologias{
+  width: 70%;
+  opacity: 0;
+  transition: all 0.3s;
+  position: absolute;
+  z-index: -1;
+  bottom: 0rem;
+}
+
+.carta>.tecnologias img{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.carta:hover>.tecnologias{
+  opacity: 1;
+  transform: translate3d(0%, -3rem, 8rem);
+}

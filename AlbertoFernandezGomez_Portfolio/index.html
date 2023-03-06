@@ -29,6 +29,7 @@
         </script>
 
     <!-- My css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/imagehover.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <!-- My scripts -->
@@ -43,37 +44,41 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top px-3 py-2 fs-4 text-nowrap">
-        <a class="navbar-brand m-0 ps-0" href="#">
+    <nav
+        class="navbar navbar-expand-md navbar-dark bg-dark sticky-top fs-4 text-nowrap d-flex align-items-center px-3 py-2">
+        <a class="navbar-brand m-0 p-0" href="#">
             <!-- <img src="media/img/icono.png" alt="Logo" id="logo"> -->
-            <h1>Alberto Fernández</h1>
+            <h1 class="m-0">Alberto Fernández</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav col justify-content-evenly ms-5">
-            <!-- <ul class="navbar-nav col justify-content-evenly"> -->
-            <!-- <ul class="navbar-nav col justify-content-end gap-3"> -->
+            <ul class="navbar-nav col me-auto justify-content-around align-items-end g-5 m-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#aboutMe">Sobre Mí</a>
+                    <a class="nav-link" href="#">Sobre mi</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Portfolio
+                        data-bs-toggle="dropdown" aria-expanded="false">Portfolio
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Tecnologías</a>
-                        <a class="dropdown-item" href="#">Proyectos</a>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contacto</a>
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -83,45 +88,48 @@
             class="container d-flex flex-column align-items-center justify-content-around vw-100 py-5 px-0 m-0 fondo">
             <!-- <h2 class="fs-1 py-3"><span id="escritura">Hola, soy Alberto, desarrollador web</span></h2> -->
             <!-- HACER MEDIA QUERIES -->
+            <div class="socials">
+                <i class="fa fa-instagram" id="instagram"></i>
+                <i class="fa fa-twitter" id="twitter"></i>
+                <i class="fa fa-github github" id="github"></i>
+                <i class="fa fa-facebook-square" id="facebook"></i>
+            </div>
             <div class="d-flex flex-column align-items-center justify-content-between w-100 pb-3">
                 <img id="logo-dinamico" src="media/img/icono.png" class="img-fluid mx-auto w-25 mt-1 mb-4">
                 <!-- <h2 class="fs-1"><span id="escritura2">#HTML #CSS #JavaScript</span></h2> -->
-                <div class="w-50 mt-5">
-                    <p class="text-center fs-4 px-3 my-2">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam.
+                <div class="w-50 mt-5 d-flex justify-content-center">
+                    <h2 class="fs-1"><span id="escritura2">#HTML #CSS #JavaScript</span></h2>
                     </p>
                 </div>
-
             </div>
         </div>
         <div class="separador"></div>
-        <div id="aboutMe container-fluid" class="container d-flex flex-column align-items-center justify-content-center gap-5">
+        <div id="aboutMe container-fluid"
+            class="container d-flex flex-column align-items-center justify-content-center gap-5">
             <div>
                 <h1 class="fs-0">Sobre Mi</h1>
             </div>
             <div class="impar d-flex flex-row align-items-center justify-content-around">
                 <div class="w-50 d-flex justify-content-center">
-                    <img class="img-fluid w-50"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s">
+                    <img class="img-fluid w-50 rounded" src="./media/img/Foto1.jpg">
                 </div>
                 <div class="w-50">
-                    <p class="text-center fs-4 px-3 my-2">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam.
+                    <p class="text-center fs-4 px-3 my-2">Mi nombre es Alberto, tengo 20 años y soy de Sevilla, España.
+                        Llevo 3
+                        años aprendiendo programación y tengo muchas ganas de seguir.
                     </p>
                 </div>
             </div>
             <div class="par d-flex flex-row align-items-center justify-content-around">
                 <div class="w-50">
-                    <p class="text-center fs-4 px-3 my-2">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam.
+                    <p class="text-center fs-4 px-3 my-2">Estoy titulado de la ESO y de Bachillerato tecnológico, y he
+                        tenido la oportunidad
+                        de cursar dos años de carrera, actualmente me estoy formando en el ciclo superior de Desarrollo
+                        de Aplicaciones Web.
                     </p>
                 </div>
                 <div class="w-50 d-flex justify-content-center">
-                    <img class="img-fluid w-50"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsS1IylyLTIo9M8KX66ZBTPY_duVrt9vc-cUHTyk&s">
+                    <img class="img-fluid w-50" src="./media/img/Foto2.png">
                 </div>
             </div>
             <div class="impar d-flex flex-row align-items-center justify-content-around gap-5">
@@ -129,20 +137,21 @@
                     <img id="portatil" class="img-fluid w-50" src="./media/img/portatil-flotante.gif">
                 </div>
                 <div class="w-50">
-                    <p class="text-center fs-4 px-3 my-2">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam.
+                    <p class="text-center fs-4 px-3 my-2">Mi objetivo personal y profesional es crecer, seguir
+                        aprendiendo y trabajar de esto, que
+                        es lo que me gusta, más adelante se podrán ver proyectos que he realizado o que he participado.
                     </p>
                 </div>
             </div>
         </div>
         <div class="separador"></div>
-        <div id="portfolio container-fluid" class="container d-flex flex-column align-items-center justify-content-evenly min-vh-100">
+        <div id="portfolio container-fluid"
+            class="container d-flex flex-column align-items-center justify-content-evenly min-vh-100">
             <h1 class="fs-0">Portfolio</h1>
             <div class="d-flex flex-column justify-content-around align-items-center gap-2 tecnologias w-100">
                 <div class="d-flex flex-column justify-content-around align-items-center mb-4">
                     <p class="">Tecnologías que domino:</p>
-                    <button id="todas" class="tecnologia text-center border border-2 rounded">ALL</button>
+                    <button id="todas" class="tecnologia text-center border border-2 rounded active">ALL</button>
                 </div>
                 <div class="d-flex justify-content-center align-items-center flex-wrap gap-5">
                     <button class="tecnologia mw-25"><img class="react img-fluid"
@@ -153,6 +162,7 @@
                             src="./media/img/JavaScript.svg"></button>
                     <button class="tecnologia mw-25"><img class="html img-fluid" src="./media/img/HTML.svg"></button>
                     <button class="tecnologia mw-25"><img class="css img-fluid" src="./media/img/CSS.svg"></button>
+                    <button class="tecnologia mw-25"><img class="bootstrap" src="./media/img/Bootstrap.svg"></button>
                     <button class="tecnologia mw-25"><img class="vscode img-fluid"
                             src="./media/img/VSCode-Dark.svg"></button>
                     <button class="tecnologia mw-25"><img class="vscode img-fluid"
@@ -168,79 +178,63 @@
                     <button class="tecnologia mw-25"><img class="git" src="./media/img/Git.svg"></button>
                     <button class="tecnologia mw-25"><img class="markdown" src="./media/img/Markdown-Dark.svg"></button>
                     <button class="tecnologia mw-25"><img class="postman" src="./media/img/Postman.svg"></button>
-                    <button class="tecnologia mw-25"><img class="aftereffects" src="./media/img/AfterEffects.svg"></button>
+                    <button class="tecnologia mw-25"><img class="aftereffects"
+                            src="./media/img/AfterEffects.svg"></button>
                     <button class="tecnologia mw-25"><img class="photoshop" src="./media/img/Photoshop.svg"></button>
                     <button class="tecnologia mw-25"><img class="figma" src="./media/img/Figma-Dark.svg"></button>
                 </div>
             </div>
             <div id="cartas"
                 class="container d-flex flex-wrap justify-content-around align-items-center gap-5 mt-5 p-0">
-                <figure id="carta1"
-                    class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-1">
-                    <img src="./media/img/Youtify-Logo.png" class="w-100" alt="Youtify">
-                    <figcaption class="d-flex flex-column justify-content-center align-items-center">
-                        <!-- <h3><a class="d-flex flex-column align-items-center mt-4" target="_blank"
-                                href="https://albertof17.github.io/Youtify/">Youtify</a></h3> -->
-                        <h3 class="text-center">Youtify</h3>
-                        <p class="text-center">Este proyecto utiliza las Tecnologías:</p>
-                        <div
-                            class="tecnologias d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
-                            <img class="react" src="./media/img/React-Dark.svg">
-                            <img class="nodejs" src="./media/img/NodeJS-Dark.svg">
-                            <img class="javascript" src="./media/img/JavaScript.svg">
-                            <img class="html" src="./media/img/HTML.svg">
-                            <img class="css" src="./media/img/CSS.svg">
-                            <img class="vscode" src="./media/img/VSCode-Dark.svg">
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure id="carta2"
-                    class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-1">
-                    <img src="./media/img/old-logo.png" class="image-fluid rounded-circle w-100"
-                        alt="Portfolio Primer Trimestre">
-                    <figcaption class="d-flex flex-column justify-content-center align-items-center">
-                        <!-- <h3><a class="d-flex flex-column align-items-center text-center mt-4" target="_blank"
-                                href="https://albertof17.github.io/Marcas/HTML_CSS_JS/Examenes%20%20y%20Proyectos/AlbertoFernandezGomez_Examen1/">Mi
-                                Portfolio Primer Trimestre</a></h3> -->
-                        <h3 class="text-center">Mi Portfolio Primer Trimestre</h3>
-                        <p class="text-center">Este proyecto utiliza las Tecnologías:</p>
-                        <div
-                            class="tecnologias d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
-                            <img class="html" src="./media/img/HTML.svg">
-                            <img class="css" src="./media/img/CSS.svg">
-                            <img class="vscode" src="./media/img/VSCode-Dark.svg">
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure id="carta4"
-                    class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-1">
-                    <img src="./media/img/icono.png" class="w-100" alt="Imagen de ejemplo">
-                    <figcaption class="d-flex flex-column justify-content-center align-items-center">
-                        <h3 class="text-center">Mi Portfolio Segundo Trimestre</h3>
-                        <p class="text-center">Este proyecto utiliza las Tecnologías:</p>
-                        <div class="tecnologias d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
-                            <img class="html" src="./media/img/HTML.svg">
-                            <img class="css" src="./media/img/CSS.svg">
-                            <img class="vscode" src="./media/img/VSCode-Dark.svg">
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure id="carta3"
-                    class="carta d-flex flex-column justify-content-center align-items-center imghvr-flip-vert p-1">
-                    <img id="map" src="./media/img/logo-map.webp" class="image-fluid w-100" alt="M.A.P.">
-                    <figcaption class="d-flex flex-column justify-content-center align-items-center">
-                        <!-- <h3><a class="d-flex flex-column align-items-center text-center mt-4" target="_blank"
-                                href="https://albertof17.github.io/Marcas/HTML_CSS_JS/Examenes%20%20y%20Proyectos/M.A.P">M.A.P.</a>
-                        </h3> -->
-                        <h3 class="text-center">M.A.P.</h3>
-                        <p class="text-center">Este proyecto utiliza las Tecnologías:</p>
-                        <div class="tecnologias d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
-                            <img class="html" src="./media/img/HTML.svg">
-                            <img class="css" src="./media/img/CSS.svg">
-                            <img class="vscode" src="./media/img/VSCode-Dark.svg">
-                        </div>
-                    </figcaption>
-                </figure>
+                <div class="carta">
+                    <div class="wrapper">
+                        <img src="./media/img/Youtify-Logo.png" class="cover-image">
+                    </div>
+                    <div class="tecnologias d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
+                        <p class="title m-0 text-light fw-bold">Youtify</p>
+                        <img class="react" src="./media/img/React-Dark.svg">
+                        <img class="nodejs" src="./media/img/NodeJS-Dark.svg">
+                        <img class="javascript" src="./media/img/JavaScript.svg">
+                        <img class="html" src="./media/img/HTML.svg">
+                        <img class="css" src="./media/img/CSS.svg">
+                        <img class="vscode" src="./media/img/VSCode-Dark.svg">
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="wrapper">
+                        <img src="./media/img/old-logo.png" class="cover-image rounded-circle">
+                    </div>
+                    <div class="tecnologias d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
+                        <p class="title m-0 text-light fw-bold">Portfolio Trimestre 1</p>
+                        <img class="html" src="./media/img/HTML.svg">
+                        <img class="css" src="./media/img/CSS.svg">
+                        <img class="vscode" src="./media/img/VSCode-Dark.svg">
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="wrapper">
+                        <img src="./media/img/icono.png" class="cover-image">
+                    </div>
+                    <div class="tecnologias d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
+                        <p class="title m-0 text-light fw-bold">Portfolio Trimestre 2</p>
+                        <img class="html" src="./media/img/HTML.svg">
+                        <img class="css" src="./media/img/CSS.svg">
+                        <img class="vscode" src="./media/img/VSCode-Dark.svg">
+                        <img class="bootstrap" src="./media/img/Bootstrap.svg">
+                    </div>
+                </div>
+                <div class="carta">
+                    <div class="wrapper">
+                        <img src="./media/img/logo-map.webp" class="cover-image">
+                    </div>
+                    <div class="tecnologias d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
+                        <p class="title m-0 text-light fw-bold">M.A.P.</p>
+                        <img class="html" src="./media/img/HTML.svg">
+                        <img class="css" src="./media/img/CSS.svg">
+                        <img class="vscode" src="./media/img/VSCode-Dark.svg">
+                        <img class="bootstrap" src="./media/img/Bootstrap.svg">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="separador"></div>
@@ -251,9 +245,7 @@
                     <div class="d-flex gap-3">
                         <legend class="text-light border px-2 py-1">
                             <p>Sígueme en mis redes sociales</p>
-                            <div>
 
-                            </div>
                         </legend>
                         <legend class="reset border px-2 py-1">Contact me</legend>
                     </div>
@@ -280,7 +272,8 @@
                             placeholder="Escriba el mensaje..." rows="15" cols="40" required></textarea>
                     </div>
                     <div class="row g-3 mt-2 w-25 mx-auto">
-                        <input id="sendBttn" class="btn btn-secondary d-flex justify-content-center" type="submit" value="Send"/>
+                        <input id="sendBttn" class="btn btn-secondary d-flex justify-content-center" type="submit"
+                            value="Send" />
                     </div>
                 </fieldset>
             </form>
