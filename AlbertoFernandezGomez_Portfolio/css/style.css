@@ -254,13 +254,16 @@ svg {
 html {
   scroll-behavior: smooth;
 }
-body, nav, input{
+
+body, nav, input, form, textarea{
   background-color: #0a0d25;
 }
-p, h1, h2, h3, li, a{
-  color: #492b9c;
+
+p, h1, h2, h3, li, a, legend, label, textarea{
+  color: #5c37c4;
 }
- :root {
+
+ /* :root {
   --scheme-color1: #283785;
   --scheme-color2: #1C2269;
   --scheme-color3: #18144F;
@@ -284,19 +287,19 @@ p, h1, h2, h3, li, a{
   --warning-color: #ffc107!important;
   --info-color: aquamarine!important;
   --bttn-color: #007bff!important;
-} 
+}  */
 
 /* Remove border from toggler */
 .navbar-toggler {
-  border: 0 !important;
+  border: 0;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 0 !important;
+  outline: none;
+  box-shadow: none;
+  border: 0;
 }
 
 /* Lines of the Toggler */
