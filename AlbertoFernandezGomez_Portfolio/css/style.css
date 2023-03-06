@@ -259,11 +259,19 @@ body, nav, input, form, textarea{
   background-color: #0a0d25;
 }
 
-p, h1, h2, h3, li, a, legend, label, textarea{
-  color: #5c37c4;
+p, h1, h2, h3, li, #navbarSupportedContent a, legend, label, textarea{
+  color: #4a2c9e;
+}
+.active{
+  color: #936fff;
+  font-weight: 600;
 }
 
- /* :root {
+nav{
+  background-color: #0a0d25;
+}
+
+/* :root {
   --scheme-color1: #283785;
   --scheme-color2: #1C2269;
   --scheme-color3: #18144F;
@@ -364,6 +372,14 @@ nav{
   font-size: 4rem;
 }
 
+#logo{
+  width: 5rem;
+  display: inline;
+}
+
+.logo-texto h1{
+  color: #362073;
+}
 
 #home {
   height: 91.2vh;
