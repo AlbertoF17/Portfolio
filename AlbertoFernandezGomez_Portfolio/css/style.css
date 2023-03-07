@@ -286,7 +286,7 @@ li,
 legend,
 label,
 textarea {
-  color: #4a2c9e;
+  color: white;
 }
 
 .form-row,
@@ -306,7 +306,7 @@ label,
 
 #sendBttn{
   background-color: #1C2269;
-  color: #7042f0;
+  color: white;
   font-size: 1.5rem;
   font-weight: 600;
   width: 10rem;
@@ -398,7 +398,7 @@ nav {
 
 /* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
-  background-color: #2b42b4;
+  background-color: white;
 }
 
 nav {
@@ -600,12 +600,11 @@ div:has(#todas:focus) .tecnologia img {
   filter: invert(100);
 }
 
-form:has(select > option[value=java]:checked) #carta1:has(.container .java),
-form:has(select > option[value=python]:checked)+.container .python,
-form:has(select > option[value=html]:checked) #carta1:has(.container .html),
-form:has(select > option[value=css]:checked)+.container .css {
-  color: rgb(var(--bs-success-rgb));
-  animation: escala 2s;
+.tecnologias div:has(img[class=html]:checked) .carta:has(.html),
+form:has(select > option[value=python]:checked) .python,
+form:has(select > option[value=html]:checked) .carta:has(.html),
+form:has(select > option[value=css]:checked) .css {
+  background-color: red;
 }
 
 @keyframes escala {
