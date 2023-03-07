@@ -435,6 +435,7 @@ nav {
   background-attachment: fixed;
   min-width: 100%;
   min-height: 90vh;
+  max-height: 90vh;
   z-index: -2;
 }
 
