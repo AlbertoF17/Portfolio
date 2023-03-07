@@ -294,7 +294,7 @@ form fieldset legend,
 #subject,
 #body,
 #cc,
-#boton-cc{
+#boton-cc {
   border: 1px solid #283785;
 }
 
@@ -304,7 +304,7 @@ label,
 
 }
 
-#sendBttn{
+#sendBttn {
   background-color: #1C2269;
   color: white;
   font-size: 1.5rem;
@@ -312,17 +312,13 @@ label,
   width: 10rem;
 }
 
-#sendBttn:hover{
+#sendBttn:hover {
   background-color: white;
   color: black;
   box-shadow: -5px 5px 20px white,
-              5px -5px 20px white;
+    5px -5px 20px white;
   transition: all 0.5s;
 
-}
-
-.nav-link {
-  font-size: 0.3rem;
 }
 
 .active {
@@ -333,6 +329,10 @@ label,
 nav {
   min-height: 10vh;
   background-color: #0a0d25;
+}
+
+.nav-link {
+  padding: 0;
 }
 
 /* Remove border from toggler */
@@ -401,11 +401,11 @@ nav {
   background-color: white;
 }
 
-nav {
+.navbar-collapse ul {
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: space-around;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .fs-0 {
@@ -569,7 +569,7 @@ nav {
   min-width: 1rem;
 }
 
-#todas{
+#todas {
   border: none;
   background: none;
 }
@@ -600,25 +600,37 @@ div:has(#todas:focus) .tecnologia img {
   filter: invert(100);
 }
 
-.tecnologias div:has(img[class=html]:checked) .carta:has(.html),
+.tecnologias div:has(.html:focus) .carta:has(.html),
 form:has(select > option[value=python]:checked) .python,
 form:has(select > option[value=html]:checked) .carta:has(.html),
 form:has(select > option[value=css]:checked) .css {
   background-color: red;
 }
 
-.impar{
+.html:focus~.html,
+.boton2:hover~.carta2 {
+  /* Agrega los estilos que desees para el efecto hover */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.impar {
   display: flex;
   flex-direction: column !important;
 }
 
-.par{
+.par {
   display: flex;
   flex-direction: column-reverse !important;
 }
 
-.par div p, .impar div p{
+.par div p,
+.impar div p {
   font-size: 1rem !important;
+}
+
+.par img,
+.impar img {
+  width: 50%;
 }
 
 @keyframes escala {
@@ -862,24 +874,41 @@ fieldset legend {
     padding-bottom: 0;
   }
 
-  .impar, .par{
+  .impar,
+  .par {
     display: flex;
     flex-direction: row !important;
   }
+
   .par div p,
-  .impar div p{
+  .impar div p {
     font-size: 1.25rem !important;
   }
-  
+
+  .par img,
+  .impar img {
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 768px) {
   .container-bp {
     max-width: 768px;
   }
+
   .par div p,
-  .impar div p{
+  .impar div p {
     font-size: 1.5rem !important;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+  }
+
+  .par img,
+  .impar img {
+    width: 50%;
   }
 }
 
@@ -897,9 +926,14 @@ fieldset legend {
   #escritura2 {
     font-size: 3rem;
   }
+
   .par div p,
-  .impar div p{
+  .impar div p {
     font-size: 1.75rem !important;
+  }
+
+  .nav-link {
+    font-size: 1.75rem;
   }
 }
 
