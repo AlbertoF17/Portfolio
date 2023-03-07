@@ -607,6 +607,20 @@ form:has(select > option[value=css]:checked) .css {
   background-color: red;
 }
 
+.impar{
+  display: flex;
+  flex-direction: column !important;
+}
+
+.par{
+  display: flex;
+  flex-direction: column-reverse !important;
+}
+
+.par div p, .impar div p{
+  font-size: 1rem !important;
+}
+
 @keyframes escala {
   50% {
     transform: scale(2);
@@ -633,22 +647,6 @@ form:has(select > option[value=css]:checked) .css {
   border-radius: 6px;
   cursor: pointer;
 }
-
-
-/* .carta::before {
-  content: "";
-  width: 104%;
-  height: 102%;
-  border-radius: 8px;
-  background-image: linear-gradient(
-    var(--rotate)
-    , #5ddcff, #3c67e3 43%, #4e00c2);
-    position: absolute;
-    z-index: -2;
-    top: -1%;
-    left: -2%;
-    animation: spin 2.5s linear infinite;
-}*/
 
 .carta::after {
   position: absolute;
@@ -774,9 +772,7 @@ fieldset legend {
 
 .carta:hover .wrapper {
   transform: perspective(900px) translateY(-5%) rotateX(15deg);
-  box-shadow: 2px 35px 32px -8px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 2px 35px 32px -8px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 2px 35px 32px -8px rgba(255, 255, 255, 0.75);
+  box-shadow: 2px 20px 20px -8px rgba(255, 255, 255, 0.75);
 }
 
 .wrapper::before,
@@ -865,11 +861,25 @@ fieldset legend {
     justify-content: center;
     padding-bottom: 0;
   }
+
+  .impar, .par{
+    display: flex;
+    flex-direction: row !important;
+  }
+  .par div p,
+  .impar div p{
+    font-size: 1.25rem !important;
+  }
+  
 }
 
 @media (min-width: 768px) {
   .container-bp {
     max-width: 768px;
+  }
+  .par div p,
+  .impar div p{
+    font-size: 1.5rem !important;
   }
 }
 
@@ -886,6 +896,10 @@ fieldset legend {
   #escritura,
   #escritura2 {
     font-size: 3rem;
+  }
+  .par div p,
+  .impar div p{
+    font-size: 1.75rem !important;
   }
 }
 
