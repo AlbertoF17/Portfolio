@@ -625,16 +625,6 @@ form:has(select > option[value=css]:checked) .css {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.impar {
-  display: flex;
-  flex-direction: column !important;
-}
-
-.par {
-  display: flex;
-  flex-direction: column-reverse !important;
-}
-
 .par div,
 .impar div {
   width: 75%;
