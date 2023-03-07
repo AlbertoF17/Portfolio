@@ -428,22 +428,13 @@ nav {
   align-items: center;
 }
 
-/* SE SUPONE Q FUNCIONAN PERO NO*/
-main:nth-child(odd) {
-  height: 92.5vh;
-}
-
-/* main>div:not(.separador){
-    height: 92.5vh;
-} */
-
 .fondo {
   background-image: url(../media/background/bg4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   z-index: -2;
 }
 
@@ -547,7 +538,7 @@ main:nth-child(odd) {
 }
 
 .separador {
-  height: 7.5vh;
+  height: 10vh;
   width: 100%;
 }
 
@@ -562,8 +553,6 @@ main:nth-child(odd) {
   width: 30%;
 }
 
-
-
 .tecnologia {
   font-size: 1.25rem;
   color: white;
@@ -577,6 +566,11 @@ main:nth-child(odd) {
   background-color: transparent;
   border-radius: 0.9rem;
   min-width: 1rem;
+}
+
+#todas{
+  border: none;
+  background: none;
 }
 
 #todas:hover {
@@ -684,15 +678,15 @@ form:has(select > option[value=css]:checked)+.container .css {
   }
 }
 
+fieldset legend {
+  max-width: 50%;
+}
+
 .socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  position: absolute;
-  bottom: 3.5rem;
-  left: 0.5rem;
-  z-index: 0;
+  text-align: center;
 }
 
 #instagram,
@@ -700,9 +694,9 @@ form:has(select > option[value=css]:checked)+.container .css {
 #github,
 #facebook {
   text-align: center;
-  font-size: 3.6rem;
-  width: 4.5rem;
-  height: 4.5rem;
+  font-size: 3rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;

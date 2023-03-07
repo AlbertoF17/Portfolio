@@ -64,49 +64,28 @@
                     <a class="nav-link active fs-4" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-4" href="#">Sobre mi</a>
+                    <a class="nav-link fs-4" href="#aboutMe">Sobre mi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-4" href="#">Portfolio</a>
+                    <a class="nav-link fs-4" href="#portfolio">Portfolio</a>
                 </li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">Portfolio
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item fs-4" href="#">Action</a></li>
-                        <li><a class="dropdown-item fs-4" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item fs-4" href="#">Something else here</a></li>
-                    </ul>
-                </li> -->
                 <li class="nav-item">
-                    <a class="nav-link fs-4" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                    <a class="nav-link fs-4" href="#contact" tabindex="-1" aria-disabled="true">Contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
     <main class="d-flex flex-column">
-        <div id="home container-fluid"
-            class="container d-flex flex-column align-items-center justify-content-around vw-100 py-5 px-0 m-0 fondo">
+        <div class="container container-fluid d-flex flex-column align-items-center justify-content-around vw-100 py-5 px-0 m-0 fondo">
             <h2 class="fs-1 py-3"><span id="escritura">Hola, soy Alberto, desarrollador web</span></h2>
-            <!-- HACER MEDIA QUERIES -->
-            <!-- <div class="container-fluid w-25 socials">
-                <i class="fa fa-instagram" id="instagram"></i>
-                <i class="fa fa-twitter" id="twitter"></i>
-                <i class="fa fa-github github" id="github"></i>
-                <i class="fa fa-facebook-square" id="facebook"></i>
-            </div> -->
             <div class="d-flex flex-column align-items-center justify-content-between w-100 pb-3">
                 <img id="logo-dinamico" src="media/img/icono.png" class="img-fluid mx-auto mt-1 mb-4">
                 <!-- <h2 class="fs-1"><span id="escritura2">#HTML #CSS #JavaScript</span></h2> -->
             </div>
         </div>
-        <div class="separador"></div>
-        <div id="aboutMe container-fluid"
-            class="container d-flex flex-column align-items-center justify-content-center gap-5">
+        <div class="separador" id="aboutMe"></div>
+        <!-- <div id="aboutMe" -->
+        <div class="container container-fluid d-flex flex-column align-items-center justify-content-center gap-5">
             <div>
                 <h1 class="fs-0">Sobre Mi</h1>
             </div>
@@ -116,17 +95,15 @@
                 </div>
                 <div class="w-50">
                     <p class="text-center fs-4 px-3 my-2">Mi nombre es Alberto, tengo 20 años y soy de Sevilla, España.
-                        Llevo 3
-                        años aprendiendo programación y tengo muchas ganas de seguir.
+                        Llevo 3 años aprendiendo programación y tengo muchas ganas de seguir.
                     </p>
                 </div>
             </div>
             <div class="par d-flex flex-row align-items-center justify-content-around">
                 <div class="w-50">
                     <p class="text-center fs-4 px-3 my-2">Estoy titulado de la ESO y de Bachillerato tecnológico, y he
-                        tenido la oportunidad
-                        de cursar dos años de carrera, actualmente me estoy formando en el ciclo superior de Desarrollo
-                        de Aplicaciones Web.
+                        tenido la oportunidad de cursar dos años de carrera, actualmente me estoy formando en el ciclo
+                        superior de Desarrollo de Aplicaciones Web.
                     </p>
                 </div>
                 <div class="w-50 d-flex justify-content-center">
@@ -145,14 +122,15 @@
                 </div>
             </div>
         </div>
-        <div class="separador"></div>
-        <div id="portfolio container-fluid"
-            class="container d-flex flex-column align-items-center justify-content-evenly min-vh-100">
+        <div class="separador" id="portfolio"></div>
+        <!-- <div id="portfolio" -->
+        <div class="container container-fluid d-flex flex-column align-items-center justify-content-evenly min-vh-100">
             <h1 class="fs-0">Portfolio</h1>
             <div class="d-flex flex-column justify-content-around align-items-center gap-2 tecnologias w-100">
                 <div class="d-flex flex-column justify-content-around align-items-center mb-4">
                     <p class="">Tecnologías que domino:</p>
-                    <button id="todas" class="tecnologia text-center border border-2 rounded active" autofocus>ALL</button>
+                    <button id="todas" class="tecnologia text-center border border-2 rounded active"
+                        autofocus>Seleccionar todas</button>
                 </div>
                 <div class="d-flex justify-content-center align-items-center flex-wrap gap-5">
                     <button class="tecnologia mw-25"><img class="react img-fluid"
@@ -238,17 +216,23 @@
                 </div>
             </div>
         </div>
-        <div class="separador"></div>
-        <div id="contact container-fluid" class="container mb-5">
+        <div class="separador" id="contact"></div>
+        <!-- <div id="contact" -->
+        <div class="container container-fluid mb-5 vh-75">
             <h1 id="contacto" class="fs-0 text-center mb-4">Contacto</h1>
             <form action="mailto:alberto.fernandez@a.vedrunasevillasj.es" method="get" class="mt-2 mx-auto">
                 <fieldset class="form-row reset p-4 align-items-center rounded">
                     <div class="d-flex gap-3">
                         <legend class="text-light px-2 py-1 rounded">
                             <p>Sígueme en mis redes sociales</p>
-
+                            <!-- <div class="container-fluid w-25 socials">
+                                <i class="fa fa-instagram" id="instagram"></i>
+                                <i class="fa fa-twitter" id="twitter"></i>
+                                <i class="fa fa-github github" id="github"></i>
+                                <i class="fa fa-facebook-square" id="facebook"></i>
+                            </div> -->
                         </legend>
-                        <legend class="reset px-2 py-1 rounded">Contact me</legend>
+                        <legend class="reset px-2 py-1 rounded">Contáctame</legend>
                     </div>
 
                     <div class="form-group row g-3 mt-1 mx-auto">
@@ -264,7 +248,7 @@
                                 <div class="input-group-text" id="boton-cc">@</div>
                             </div>
                             <input type="email" id="cc" class="form-control text-info rounded" name="cc"
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
                         </div>
                     </div>
                     <div class="row g-3 mt-2 mx-auto">
@@ -273,8 +257,7 @@
                             placeholder="Escriba el mensaje..." rows="15" cols="40" required></textarea>
                     </div>
                     <div class="row g-3 mt-2 mx-auto d-flex justify-content-center">
-                        <input id="sendBttn" class="btn" type="submit"
-                            value="Send" />
+                        <input id="sendBttn" class="btn" type="submit" value="Send" />
                     </div>
                 </fieldset>
             </form>
