@@ -304,10 +304,15 @@ label,
 
 }
 
+.logo-texto {
+  cursor: default;
+}
+
 .nav-link:hover,
-.logo-texto h1:hover{
+.logo-texto h1:hover {
+  cursor: pointer;
   text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7),
-               0px 0px 15px rgba(255, 255, 255, 0.7);
+    0px 0px 15px rgba(255, 255, 255, 0.7);
   transition: all 0.15s;
 }
 
@@ -630,6 +635,11 @@ form:has(select > option[value=css]:checked) .css {
   flex-direction: column-reverse !important;
 }
 
+.par div,
+.impar div {
+  width: 75%;
+}
+
 .par div p,
 .impar div p {
   font-size: 1rem !important;
@@ -885,6 +895,11 @@ fieldset legend {
   .par {
     display: flex;
     flex-direction: row !important;
+  }
+
+  .par div,
+  .impar div {
+    width: 50%;
   }
 
   .par div p,
