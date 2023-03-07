@@ -309,8 +309,10 @@ label,
 }
 
 .nav-link:hover,
-.logo-texto h1:hover {
+.logo-texto h1:hover,
+.nav-link:focus{
   cursor: pointer;
+  outline: none;
   text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7),
     0px 0px 15px rgba(255, 255, 255, 0.7);
   transition: all 0.15s;
