@@ -333,25 +333,25 @@ nav {
 }
 
 #todas:hover {
-  box-shadow: 0 0 10px #362073, 0 0 40px #362073, 0 0 80px #362073;
+  box-shadow: 0 0 5px #362073, 0 0 30px #362073, 0 0 50px #362073;
   transition: all 0.3s;
 }
 
 div:has(#todas:focus) .tecnologia img {
   filter: none;
-  box-shadow: 0 0 10px #362073, 0 0 40px #362073, 0 0 80px #362073;
+  box-shadow: 0 0 5px #362073, 0 0 30px #362073, 0 0 50px #362073;
   transition: all 0.3s;
 }
 
 .tecnologia img:hover {
   filter: none;
-  box-shadow: 0 0 10px #362073, 0 0 40px #362073, 0 0 80px #362073;
+  box-shadow: 0 0 5px #362073, 0 0 30px #362073, 0 0 50px #362073;
   transition: all 0.3s;
 }
 
 .tecnologia:focus img {
   filter: none;
-  box-shadow: 0 0 10px #362073, 0 0 40px #362073, 0 0 80px #362073;
+  box-shadow: 0 0 5px #362073, 0 0 30px #362073, 0 0 50px #362073;
 }
 
 #map {
