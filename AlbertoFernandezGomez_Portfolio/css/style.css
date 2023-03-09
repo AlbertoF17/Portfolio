@@ -235,6 +235,7 @@ nav {
 .navbar:has(.show) ~ main .fondo:before{
   top: 25.2vh;
 }
+/*PONER QUE SI NO HAY MENU DE HAMBURGUESA NO HAYA TOP (media query) Y MODIFICAR EL VALOR*/
 
 
 #logo-dinamico {
