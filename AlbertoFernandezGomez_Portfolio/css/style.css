@@ -15,10 +15,6 @@
   --black-inverted: #000000;
 }
 
-#my-div{
-  color: var(--color-primary);
-}
-
 body,
 nav,
 input,
