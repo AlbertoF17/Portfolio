@@ -2,6 +2,19 @@ let btnReset = document.getElementById('reset-button');
 let btnDark = document.getElementById('dark-button');
 let btnLight = document.getElementById('light-button');
 
+document.onload(function(){
+    document.documentElement.style.setProperty('--scheme-color1', '#283785');
+    document.documentElement.style.setProperty('--scheme-color2', '#1C2269');
+    document.documentElement.style.setProperty('--scheme-color3', '#18144F');
+    document.documentElement.style.setProperty('--scheme-color4', '#0D1130');
+    document.documentElement.style.setProperty('--scheme-color5', '#362073');
+    document.documentElement.style.setProperty('--scheme-color6', '#492C9C');
+    document.documentElement.style.setProperty('--bg-color', '#0a0d25');
+    document.documentElement.style.setProperty('--text-color', '#FFFFFF');
+    document.documentElement.style.setProperty('--border-color', 'var(--scheme-color1)');
+    document.documentElement.style.setProperty('--button-color', 'var(--scheme-color1)');
+})
+
 btnReset.onclick = (function() {
     document.documentElement.style.setProperty('--scheme-color1', '#283785');
     document.documentElement.style.setProperty('--scheme-color2', '#1C2269');
