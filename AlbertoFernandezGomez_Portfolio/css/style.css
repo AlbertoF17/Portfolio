@@ -62,24 +62,6 @@ label,
   cursor: default;
 }
 
-.temas{
-  position: absolute;
-  top:12vh;
-  left: 2vh;
-}
-
-.temas button{
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  border: none;
-}
-
-.temas:has(#light-button:focus) button{
-  filter: invert(100);
-  transition: all 0.3s;
-}
-
 .nav-link:hover,
 .logo-texto h1:hover,
 .nav-link:focus {
