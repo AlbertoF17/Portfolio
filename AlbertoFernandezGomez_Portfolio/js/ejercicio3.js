@@ -1,5 +1,5 @@
 // Obtener el input del asunto
-const subjectInput = document.getElementById('subject');
+const subjectInput = document.querySelector('label[for=subject]');
 
 // Agregar un escucha de evento para cuando el input pierde el focus
 subjectInput.addEventListener('blur', () => {
