@@ -1,6 +1,6 @@
-# Portfolio rama Ejercicio1
+# Portfolio rama Ejercicio2
 ## Autor: [AlbertoF17](https://www.github.com/albertof17)
-Esta es la rama que corresponde al ejercicio 1 de JavaScript de mi portfolio, cumpliendo así la tarea puesta en la classrroom de sistemas informáticos.
+Esta es la rama que corresponde al ejercicio 2 de JavaScript de mi portfolio, cumpliendo así la tarea puesta en la classrroom de sistemas informáticos.
 
 ![Icono](https://raw.githubusercontent.com/AlbertoF17/Portfolio/develop/AlbertoFernandezGomez_Portfolio/media/img/icono.png)
 
@@ -19,9 +19,7 @@ La página es una única página (un sólo archivo HTML) que consta de las sigui
 
 ## Features
 
-- Web Responsiva
-- Animaciones con CSS puro
-- Barra de navegación adaptativa (Bootstrap)
+- Filtrado de proyectos según los botones de las tecnologías pulsados
 
 
 ## 🔗 Links
