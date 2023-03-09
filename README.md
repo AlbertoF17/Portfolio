@@ -19,9 +19,7 @@ La página es una única página (un sólo archivo HTML) que consta de las sigui
 
 ## Features
 
-- Web Responsiva
-- Animaciones con CSS puro
-- Barra de navegación adaptativa (Bootstrap)
+- Sistema de cambio de temas (tema por defecto, tema claro y tema oscuro)
 
 
 ## 🔗 Links
