@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8";send
 
 :root {
   --scheme-color1: #283785;
@@ -7,6 +7,16 @@
   --scheme-color4: #0D1130;
   --scheme-color5: #362073;
   --scheme-color6: #492C9C;
+  --bg-color: #0a0d25;
+  --text-color: #FFFFFF;
+  --border-color: var(--scheme-color1);
+  --button-color: var(--scheme-color1);
+  --color-primary: var(--text-color);
+  --black-inverted: #000000;
+}
+
+#my-div{
+  color: var(--color-primary);
 }
 
 body,
@@ -17,7 +27,7 @@ form,
 #body,
 #cc,
 #boton-cc {
-  background-color: #0a0d25;
+  background-color: var(--bg-color);
 }
 
 
@@ -30,7 +40,11 @@ li,
 legend,
 label,
 textarea {
-  color: white;
+  color: var(--text-color);
+}
+
+#logo-header{
+  color: var(--text-color);
 }
 
 .form-row,
@@ -39,7 +53,7 @@ form fieldset legend,
 #body,
 #cc,
 #boton-cc {
-  border: 1px solid #283785;
+  border: 1px solid var(--border-color);
 }
 
 label,
@@ -63,30 +77,25 @@ label,
 }
 
 #sendBttn {
-  background-color: #1C2269;
-  color: white;
+  background-color: var(--button-color);
+  color: var(--text-color);
   font-size: 1.5rem;
   font-weight: 600;
   width: 10rem;
 }
 
 #sendBttn:hover {
-  background-color: white;
-  color: black;
-  box-shadow: -5px 5px 20px white,
+  background-color: var(--text-color);
+  color: var(--black-inverted);
+  box-shadow: -5px 5px 20px var(--text-color),
     5px -5px 20px white;
   transition: all 0.5s;
 
 }
 
-.active {
-  color: #936fff;
-  font-weight: 600;
-}
-
 nav {
   min-height: 10vh;
-  background-color: #0a0d25;
+  background-color: var(--bg-color);
 }
 
 .nav-link {
@@ -156,7 +165,7 @@ nav {
 
 /* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
-  background-color: white;
+  background-color: var(--text-color);
 }
 
 .navbar-collapse ul {
@@ -264,34 +273,6 @@ nav {
   }
 }
 
-#escritura2 {
-  font-size: 1rem;
-  color: white;
-  display: block;
-  font-family: monospace;
-  white-space: nowrap;
-  border-right: 2px solid;
-  width: 22ch;
-  animation: typing2 5s steps(22) 1, blink 0.5s infinite step-end alternate;
-  overflow: hidden;
-}
-
-@keyframes typing2 {
-  from {
-    width: 0;
-  }
-
-  50% {
-    width: 22ch;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
 #portatil {
   filter: hue-rotate(340deg);
 }
@@ -314,7 +295,7 @@ nav {
 
 .tecnologia {
   font-size: 1.25rem;
-  color: white;
+  color: var(--text-color);
   border-color: transparent;
   background-color: transparent;
 }

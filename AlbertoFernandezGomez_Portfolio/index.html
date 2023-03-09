@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="es" data-bs-theme="Default">
 <!-- Para cambiar de modo oscuro "dark" a modo normal, simplemente cambiarlo por "light"-->
 <!-- Coded by AlbertoF17 -->
 
@@ -33,7 +33,7 @@
     <link href="css/imagehover.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <!-- My scripts -->
-    <!--<script type="text/javascript" src="js/app.js" defer></script>-->
+    <script type="text/javascript" src="js/ejercicio1.js" defer></script>
 
     <!-- Icono al lado del titulo -->
     <link rel="shortcut icon" href="media/icon/favicon.ico" type="image/xpng">
@@ -48,9 +48,14 @@
         <div class="w-50">
             <a class="navbar-brand m-0 p-0" href="#">
                 <div class="logo-texto d-flex align-items-center">
-                    <h1 class="m-0 text-light">Alberto Fernández</h1>
+                    <h1 id="logo-header" class="m-0">Alberto Fernández</h1>
                 </div>
             </a>
+        </div>
+        <div class="temas">
+            <button id="reset-button">Reset</button>
+            <button id="dark-button">Dark</button>
+            <button id="light-button">Light</button>
         </div>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -140,9 +145,12 @@
                             src="./media/img/NodeJS-Dark.svg"></button>
                     <button data-tecnologia="javascript" class="tecnologia mw-25"><img class="javascript img-fluid"
                             src="./media/img/JavaScript.svg"></button>
-                    <button data-tecnologia="html" class="tecnologia mw-25"><img class="html img-fluid" src="./media/img/HTML.svg"></button>
-                    <button data-tecnologia="css" class="tecnologia mw-25"><img class="css img-fluid" src="./media/img/CSS.svg"></button>
-                    <button data-tecnologia="bootstrap" class="tecnologia mw-25"><img class="bootstrap" src="./media/img/Bootstrap.svg"></button>
+                    <button data-tecnologia="html" class="tecnologia mw-25"><img class="html img-fluid"
+                            src="./media/img/HTML.svg"></button>
+                    <button data-tecnologia="css" class="tecnologia mw-25"><img class="css img-fluid"
+                            src="./media/img/CSS.svg"></button>
+                    <button data-tecnologia="bootstrap" class="tecnologia mw-25"><img class="bootstrap"
+                            src="./media/img/Bootstrap.svg"></button>
                     <button data-tecnologia="vscode" class="tecnologia mw-25"><img class="vscode img-fluid"
                             src="./media/img/VSCode-Dark.svg"></button>
                     <button data-tecnologia="java" class="tecnologia mw-25"><img class="vscode img-fluid"
@@ -155,13 +163,18 @@
                             src="./media/img/Python-Dark.svg"></button>
                     <button data-tecnologia="intellij" class="tecnologia mw-25"><img class="vscode img-fluid"
                             src="./media/img/Idea-Dark.svg"></button>
-                    <button data-tecnologia="git" class="tecnologia mw-25"><img class="git" src="./media/img/Git.svg"></button>
-                    <button data-tecnologia="markdown" class="tecnologia mw-25"><img class="markdown" src="./media/img/Markdown-Dark.svg"></button>
-                    <button data-tecnologia="postman" class="tecnologia mw-25"><img class="postman" src="./media/img/Postman.svg"></button>
+                    <button data-tecnologia="git" class="tecnologia mw-25"><img class="git"
+                            src="./media/img/Git.svg"></button>
+                    <button data-tecnologia="markdown" class="tecnologia mw-25"><img class="markdown"
+                            src="./media/img/Markdown-Dark.svg"></button>
+                    <button data-tecnologia="postman" class="tecnologia mw-25"><img class="postman"
+                            src="./media/img/Postman.svg"></button>
                     <button data-tecnologia="aftereffects" class="tecnologia mw-25"><img class="aftereffects"
                             src="./media/img/AfterEffects.svg"></button>
-                    <button data-tecnologia="photoshop" class="tecnologia mw-25"><img class="photoshop" src="./media/img/Photoshop.svg"></button>
-                    <button data-tecnologia="figma" class="tecnologia mw-25"><img class="figma" src="./media/img/Figma-Dark.svg"></button>
+                    <button data-tecnologia="photoshop" class="tecnologia mw-25"><img class="photoshop"
+                            src="./media/img/Photoshop.svg"></button>
+                    <button data-tecnologia="figma" class="tecnologia mw-25"><img class="figma"
+                            src="./media/img/Figma-Dark.svg"></button>
                 </div>
             </div>
             <div id="cartas"
@@ -170,7 +183,8 @@
                     <div class="wrapper">
                         <img src="./media/img/Youtify-Logo.png" class="cover-image">
                     </div>
-                    <div class="tecnologias proyecto d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
+                    <div
+                        class="tecnologias proyecto d-flex flex-row flex-wrap justify-content-center align-items-center w-100">
                         <p class="title m-0 text-light fw-bold">Youtify</p>
                         <img class="react" src="./media/img/React-Dark.svg">
                         <img class="nodejs" src="./media/img/NodeJS-Dark.svg">
