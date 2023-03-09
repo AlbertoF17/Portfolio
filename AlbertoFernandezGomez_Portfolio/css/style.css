@@ -232,6 +232,9 @@ nav {
   z-index: -1;
 }
 
+.navbar:has(.show) ~ main .fondo:before{
+  top: 25.2vh;
+}
 
 
 #logo-dinamico {
