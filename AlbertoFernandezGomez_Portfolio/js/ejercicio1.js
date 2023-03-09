@@ -2,7 +2,7 @@ let btnReset = document.getElementById('reset-button');
 let btnDark = document.getElementById('dark-button');
 let btnLight = document.getElementById('light-button');
 
-document.onload(function(){
+document.body.onload = (function(){
     document.documentElement.style.setProperty('--scheme-color1', '#283785');
     document.documentElement.style.setProperty('--scheme-color2', '#1C2269');
     document.documentElement.style.setProperty('--scheme-color3', '#18144F');
