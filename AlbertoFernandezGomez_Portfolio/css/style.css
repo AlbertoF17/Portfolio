@@ -357,7 +357,6 @@ div:has(#todas:focus) .tecnologia img {
 .tecnologias:has(button[data-tecnologia="todas"]:focus)~#cartas .carta .cover-image {
   transform: translateY(-3rem);
   opacity: 0.5;
-  transition: all 0.5s;
 }
 
 .tecnologias:has(.botones button[data-tecnologia="react"]:focus)~#cartas .carta:has(.react) .wrapper,
@@ -611,6 +610,13 @@ fieldset legend {
   font-size: 3rem;
   cursor: pointer;
   transition: all 0.5s;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.oculta {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .cover-image {
