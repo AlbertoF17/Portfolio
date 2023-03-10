@@ -48,10 +48,14 @@ form fieldset legend,
   border: 1px solid var(--border-color);
 }
 
+
+#logo-header{
+  color: var(--text-color);
+}
+
 label,
 .col-form-label {
   font-size: 1.5rem;
-
 }
 
 .logo-texto {
