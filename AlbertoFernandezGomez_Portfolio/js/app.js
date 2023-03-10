@@ -43,6 +43,7 @@ correo.addEventListener('blur', () => {
       correo.parentNode.appendChild(errorText);
     }
     errorText.innerText = 'Debe introducir un correo electrónico válido';
+    errorText.classList = "d-flex align-items-center";
   } else {
     // Si el input es válido, cambiar el borde a verde
     correo.style.border = '2px solid green';
