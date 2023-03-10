@@ -847,9 +847,3 @@ fieldset legend {
     max-width: 1200px;
   }
 }
-
-@media (min-width: 1400px) {
-  .container-bp {
-    max-width: 1400px;
-  }
-}
