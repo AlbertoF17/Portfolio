@@ -39,7 +39,12 @@ textarea {
   color: var(--text-color);
 }
 
-#logo-header {
+#logo-header,
+#boton-cc{
+  color: var(--text-color);
+}
+
+#body::placeholder {
   color: var(--text-color);
 }
 
