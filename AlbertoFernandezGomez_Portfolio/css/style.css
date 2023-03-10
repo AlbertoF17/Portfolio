@@ -48,8 +48,12 @@ form fieldset legend,
   border: 1px solid var(--border-color);
 }
 
+#logo-header,
+#boton-cc{
+  color: var(--text-color);
+}
 
-#logo-header{
+#body::placeholder {
   color: var(--text-color);
 }
 
