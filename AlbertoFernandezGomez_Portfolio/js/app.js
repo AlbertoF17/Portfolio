@@ -38,7 +38,7 @@ btnDark.onclick = (function() {
     document.documentElement.style.setProperty('--scheme-color5', '#901644');
     document.documentElement.style.setProperty('--scheme-color6', '#74104D');
     document.documentElement.style.setProperty('--bg-color', '#040404');
-    document.documentElement.style.setProperty('--text-color', '#000000');
+    document.documentElement.style.setProperty('--text-color', '#FFFFFF');
     document.documentElement.style.setProperty('--black-inverted', '#FFFFFF');
     document.documentElement.style.setProperty('--border-color', 'var(--scheme-color1)');
     document.documentElement.style.setProperty('--button-color', 'var(--scheme-color1)');
