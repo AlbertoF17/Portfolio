@@ -12,7 +12,7 @@ document.body.onload = (function(){
     document.documentElement.style.setProperty('--scheme-color5', '#362073');
     document.documentElement.style.setProperty('--scheme-color6', '#492C9C');
     document.documentElement.style.setProperty('--bg-color', '#0a0d25');
-    document.documentElement.style.setProperty('--text-color', '#000000');
+    document.documentElement.style.setProperty('--text-color', '#FFFFFF');
     document.documentElement.style.setProperty('--border-color', 'var(--scheme-color1)');
     document.documentElement.style.setProperty('--button-color', 'var(--scheme-color1)');
 })
