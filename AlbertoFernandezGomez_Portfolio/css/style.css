@@ -210,6 +210,9 @@ nav {
   z-index: -1;
 }
 
+.navbar:has(.show) ~ main .fondo:before{
+  top: 9.3rem;
+}
 
 #logo-dinamico {
   width: 70vw;
