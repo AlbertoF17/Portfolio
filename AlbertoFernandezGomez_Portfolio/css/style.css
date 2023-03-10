@@ -97,16 +97,12 @@ label,
 #sendBttn {
   background-color: var(--button-color);
   color: var(--text-color);
-  background-color: var(--button-color);
-  color: var(--text-color);
   font-size: 1.5rem;
   font-weight: 600;
   width: 10rem;
 }
 
 #sendBttn:hover {
-  background-color: var(--text-color);
-  color: var(--black-inverted);
   background-color: var(--text-color);
   color: var(--black-inverted);
   box-shadow: -5px 5px 20px var(--text-color),
@@ -188,7 +184,6 @@ nav {
 
 /* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
-  background-color: var(--text-color);
   background-color: var(--text-color);
 }
 
@@ -324,7 +319,6 @@ nav {
 
 .tecnologia {
   font-size: 1.25rem;
-  color: var(--text-color);
   color: var(--text-color);
   border-color: transparent;
   background-color: transparent;
