@@ -36,7 +36,7 @@ li,
 legend,
 label,
 textarea {
-  color: white;
+  color: var(--text-color);
 }
 
 .form-row,
