@@ -103,7 +103,6 @@ label,
 #sendBttn:hover {
   background-color: var(--text-color);
   color: var(--black-inverted);
-  box-shadow: -5px 5px 20px var(--text-color),
   background-color: var(--text-color);
   color: var(--black-inverted);
   box-shadow: -5px 5px 20px var(--text-color),
