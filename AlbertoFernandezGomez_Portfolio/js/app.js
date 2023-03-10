@@ -163,6 +163,7 @@ mensaje.addEventListener('blur', () => {
       mensaje.parentNode.appendChild(errorText);
     }
     errorText.innerText = 'Este campo no puede estar vacío';
+    errorText.classList = "d-flex align-items-center";
   } else {
     // Si el input es válido, cambiar el borde a verde
     mensaje.style.border = '';
