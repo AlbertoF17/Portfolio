@@ -1,4 +1,4 @@
-# Portfolio rama Ejercicio2
+# Portfolio rama Ejercicio3
 ## Autor: [AlbertoF17](https://www.github.com/albertof17)
 Esta es la rama que corresponde al ejercicio 2 de JavaScript de mi portfolio, cumpliendo así la tarea puesta en la classrroom de sistemas informáticos.
 
@@ -19,6 +19,7 @@ La página es una única página (un sólo archivo HTML) que consta de las sigui
 
 ## Features
 
+- Validador de datos introducidos en la sección de contacto
 - Filtrado de proyectos según los botones de las tecnologías pulsados
 - Sistema de cambio de temas (tema por defecto, tema claro y tema oscuro)
 

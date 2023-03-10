@@ -39,10 +39,6 @@ textarea {
   color: white;
 }
 
-#logo-header {
-  color: var(--text-color);
-}
-
 .form-row,
 form fieldset legend,
 #subject,
@@ -64,7 +60,6 @@ form fieldset legend,
 label,
 .col-form-label {
   font-size: 1.5rem;
-
 }
 
 .logo-texto {
