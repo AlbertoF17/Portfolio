@@ -36,7 +36,7 @@ li,
 legend,
 label,
 textarea {
-  color: white;
+  color: var(--text-color);
 }
 
 .form-row,
@@ -798,11 +798,5 @@ fieldset legend {
 @media (min-width: 1200px) {
   .container-bp {
     max-width: 1200px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container-bp {
-    max-width: 1400px;
   }
 }
