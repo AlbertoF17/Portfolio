@@ -215,7 +215,7 @@ nav {
 }
 
 .navbar:has(.show) ~ main .fondo:before{
-  top: 25.2vh;
+  top: 9.3rem;
 }
 
 #logo-dinamico {
@@ -745,6 +745,9 @@ fieldset legend {
     width: 100%;
   }
 
+  .navbar:has(.show) ~ main .fondo:before{
+    top: 9.8rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -764,6 +767,9 @@ fieldset legend {
   .par img,
   .impar img {
     width: 50%;
+  }
+  .navbar:has(.show) ~ main .fondo:before{
+    top: 0rem;
   }
 }
 
