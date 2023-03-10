@@ -36,11 +36,7 @@ li,
 legend,
 label,
 textarea {
-  color: var(--text-color);
-}
-
-#logo-header {
-  color: var(--text-color);
+  color: white;
 }
 
 .form-row,
@@ -52,14 +48,40 @@ form fieldset legend,
   border: 1px solid var(--border-color);
 }
 
+#logo-header,
+#boton-cc{
+  color: var(--text-color);
+}
+
+#body::placeholder {
+  color: var(--text-color);
+}
+
 label,
 .col-form-label {
   font-size: 1.5rem;
-
 }
 
 .logo-texto {
   cursor: default;
+}
+
+.temas{
+  position: absolute;
+  top:12vh;
+  left: 2vh;
+}
+
+.temas button{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.temas:has(#light-button:focus) button{
+  filter: invert(100);
+  transition: all 0.3s;
 }
 
 .nav-link:hover,
@@ -75,12 +97,16 @@ label,
 #sendBttn {
   background-color: var(--button-color);
   color: var(--text-color);
+  background-color: var(--button-color);
+  color: var(--text-color);
   font-size: 1.5rem;
   font-weight: 600;
   width: 10rem;
 }
 
 #sendBttn:hover {
+  background-color: var(--text-color);
+  color: var(--black-inverted);
   background-color: var(--text-color);
   color: var(--black-inverted);
   box-shadow: -5px 5px 20px var(--text-color),
@@ -91,6 +117,7 @@ label,
 
 nav {
   min-height: 10vh;
+  background-color: var(--bg-color);
   background-color: var(--bg-color);
 }
 
@@ -162,6 +189,7 @@ nav {
 /* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
   background-color: var(--text-color);
+  background-color: var(--text-color);
 }
 
 .navbar-collapse ul {
@@ -214,6 +242,9 @@ nav {
   z-index: -1;
 }
 
+.navbar:has(.show) ~ main .fondo:before{
+  top: 9.3rem;
+}
 .navbar:has(.show) ~ main .fondo:before{
   top: 9.3rem;
 }
@@ -294,6 +325,7 @@ nav {
 .tecnologia {
   font-size: 1.25rem;
   color: var(--text-color);
+  color: var(--text-color);
   border-color: transparent;
   background-color: transparent;
 }
@@ -359,7 +391,6 @@ div:has(#todas:focus) .tecnologia img {
 .tecnologias:has(button[data-tecnologia="todas"]:focus)~#cartas .carta .cover-image {
   transform: translateY(-3rem);
   opacity: 0.5;
-  transition: all 0.5s;
 }
 
 .tecnologias:has(.botones button[data-tecnologia="react"]:focus)~#cartas .carta:has(.react) .wrapper,
@@ -613,6 +644,13 @@ fieldset legend {
   font-size: 3rem;
   cursor: pointer;
   transition: all 0.5s;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.oculta {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .cover-image {
@@ -745,6 +783,11 @@ fieldset legend {
     width: 100%;
   }
 
+  .temas button{
+    height: 3rem;
+    width: 3rem;
+  }
+
   .navbar:has(.show) ~ main .fondo:before{
     top: 9.8rem;
   }
@@ -768,8 +811,9 @@ fieldset legend {
   .impar img {
     width: 50%;
   }
+
   .navbar:has(.show) ~ main .fondo:before{
-    top: 0rem;
+    top: 0;
   }
 }
 
