@@ -1,6 +1,6 @@
-# Portfolio rama develop
+# Portfolio rama release 1.0.0
 ## Autor: [AlbertoF17](https://www.github.com/albertof17)
-Esta es la rama develop de mi portfolio, que incluirá el HTML y CSS de la misma, cumpliendo así la tarea puesta en la classrroom de lenguaje de marcas.
+Esta es la rama de la release 1.0.0 de mi portfolio, que incluirá el HTML y CSS de la misma, cumpliendo así la tarea puesta en la classrroom de lenguaje de marcas.
 
 
 ![Icono](https://raw.githubusercontent.com/AlbertoF17/Portfolio/develop/AlbertoFernandezGomez_Portfolio/media/img/icono.png)
