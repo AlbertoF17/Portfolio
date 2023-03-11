@@ -1,6 +1,6 @@
-# Portfolio rama Ejercicio3
+# Portfolio rama develop
 ## Autor: [AlbertoF17](https://www.github.com/albertof17)
-Esta es la rama que corresponde al ejercicio 2 de JavaScript de mi portfolio, cumpliendo así la tarea puesta en la classrroom de sistemas informáticos.
+Esta es la rama que corresponde al código en preapración para nuevas features etc al portfolio.
 
 ![Icono](https://raw.githubusercontent.com/AlbertoF17/Portfolio/develop/AlbertoFernandezGomez_Portfolio/media/img/icono.png)
 
@@ -17,7 +17,7 @@ La página es una única página (un sólo archivo HTML) que consta de las sigui
 [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 
-## Features
+## Features actuales
 
 - Validador de datos introducidos en la sección de contacto
 - Filtrado de proyectos según los botones de las tecnologías pulsados
