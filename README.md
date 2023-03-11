@@ -1,4 +1,4 @@
-# Portfolio rama Ejercicio3
+# Portfolio rama release 1.2.0
 ## Autor: [AlbertoF17](https://www.github.com/albertof17)
 Esta es la rama que corresponde al ejercicio 2 de JavaScript de mi portfolio, cumpliendo así la tarea puesta en la classrroom de sistemas informáticos.
 
