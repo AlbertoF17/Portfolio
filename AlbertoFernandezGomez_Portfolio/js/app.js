@@ -173,3 +173,26 @@ mensaje.addEventListener('blur', () => {
     }
   }
 });
+
+// MAS
+
+const proyectBtn1 = document.querySelector("#Youtify");
+const proyectBtn2 = document.querySelector("#PortfolioTrimestre1");
+const proyectBtn3 = document.querySelector("#PortfolioTrimestre2");
+const proyectBtn4 = document.querySelector("#MAP");
+
+proyectBtn1.addEventListener("click", () => {
+  window.open("https://albertof17.github.io/Youtify/", "_blank");
+});
+
+proyectBtn2.addEventListener("click", () => {
+  window.open("https://albertof17.github.io/Marcas/HTML_CSS_JS/Examenes%20%20y%20Proyectos/AlbertoFernandezGomez_Examen1/index.html", "_blank");
+});
+
+proyectBtn3.addEventListener("click", () => {
+  window.open("#", "_blank");
+});
+
+proyectBtn4.addEventListener("click", () => {
+  window.open("https://albertof17.github.io/Marcas/HTML_CSS_JS/Examenes%20%20y%20Proyectos/M.A.P/", "_blank");
+});
